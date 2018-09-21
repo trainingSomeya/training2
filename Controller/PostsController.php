@@ -55,8 +55,10 @@ class PostsController extends AppController {
 				$this->Flash->error(__('The post could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->Post->User->find('list');
+		$users = $this->Post->User->find('list',array('fields'=>array('id','username')));
 		$this->set(compact('users'));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$this->set(compact('categories'));
 	}
 
 /**
