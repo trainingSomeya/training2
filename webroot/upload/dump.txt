@@ -1,0 +1,23 @@
+array(2) {
+  ["Post"]=>
+  array(4) {
+    ["title"]=>
+    string(4) "aaaa"
+    ["user_id"]=>
+    string(1) "1"
+    ["category_id"]=>
+    string(1) "1"
+    ["body"]=>
+    string(4) "dddd"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(2) {
+      [0]=>
+      string(1) "2"
+      [1]=>
+      string(1) "3"
+    }
+  }
+}

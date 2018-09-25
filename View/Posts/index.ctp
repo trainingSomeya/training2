@@ -1,5 +1,19 @@
 <div class="posts index">
 	<h2><?php echo __('Posts'); ?></h2>
+	<!-- 検索フォーム -->
+<?php echo 
+$this->Form->create('Post', array(
+    'url' => array_merge(array('action' => 'index'), $this->params['pass'])
+));
+echo $this->Form->label('title');
+echo $this->Form->text('title');
+echo $this->Form->label('category');
+echo $this->Form->text('categoryname');
+echo $this->Form->label('tag');
+echo $this->Form->text('tagname');
+echo $this->Form->submit(__('Search', true), array('div' => false));
+echo $this->Form->end(); 
+?>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -7,6 +21,7 @@
 			<th><?php echo $this->Paginator->sort('title'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('tag_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('body'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
@@ -14,6 +29,7 @@
 	</tr>
 	</thead>
 	<tbody>
+<!-- <?php echo var_dump($posts); ?> -->
 	<?php foreach ($posts as $post): ?>
 	<tr>
 		<td><?php echo h($post['Post']['id']); ?>&nbsp;</td>
@@ -23,6 +39,14 @@
 		</td>
 		<td>
 			<?php echo $this->Html->link($post['Category']['categoryname'], array('controller' => 'categories', 'action' => 'view', $post['Category']['id'])); ?>
+		</td>
+		<td>
+			<?php 
+echo h('Tag: ');
+foreach ($post['Tag'] as $tag):
+echo h($tag['tagname']."\n");
+endforeach;
+?>
 		</td>
 		<td><?php echo h($post['Post']['body']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['created']); ?>&nbsp;</td>

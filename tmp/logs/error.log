@@ -49,3 +49,590 @@ Stack Trace:
 #3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-09-25 10:07:24 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 10:07:25 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 12:03:53 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/blog/app/Controller/PostsController.php, line 62]
+2018-09-25 12:03:53 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 62, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 62, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 13:02:01 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 13:02:01 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 13:02:01 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 13:02:01 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-09-25 14:23:55 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:36:15 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:36:16 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:36:17 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:41:20 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:41:21 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:41:29 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:41:30 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/edit/8
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:41:30 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:42:15 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:42:16 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:42:17 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:42:21 Error: [MissingBehaviorException] Behavior class Search,SearchableBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'Search,SearchableBehavior',
+  'plugin' => false,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Search,Searchab...', Array)
+#1 /var/www/blog/lib/Cake/Model/Model.php(781): BehaviorCollection->init('Post', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/blog/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(742): ClassRegistry::init(Array)
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Post')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(406): Controller->__isset('Post')
+#7 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(139): Controller->__get('Post')
+#8 /var/www/blog/app/Plugin/Search/Controller/Component/PrgComponent.php(112): PrgComponent->init(Object(PostsController))
+#9 [internal function]: PrgComponent->initialize(Object(PostsController))
+#10 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#11 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#12 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#13 /var/www/blog/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#15 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#16 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2018-09-25 14:42:58 Error: Fatal Error (1): Call to a member function label() on a non-object in [/var/www/blog/app/View/Posts/index.ctp, line 7]
+2018-09-25 14:42:58 Error: [FatalErrorException] Call to a member function label() on a non-object
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 7, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 7, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 14:46:02 Error: Fatal Error (1): Call to a member function label() on a non-object in [/var/www/blog/app/View/Posts/index.ctp, line 7]
+2018-09-25 14:46:02 Error: [FatalErrorException] Call to a member function label() on a non-object
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 7, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 7, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-09-25 14:48:30 Error: [MissingActionException] Action PostsController::find() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'find',
+)
+Request URL: /posts/find
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-25 14:48:54 Error: [MissingActionException] Action PostsController::find() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'find',
+)
+Request URL: /posts/find
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-25 14:48:58 Error: [MissingActionException] Action PostsController::find() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'find',
+)
+Request URL: /posts/find
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-09-25 14:53:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.category' in 'where clause'
+Request URL: /posts?title=&category=A&tag=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(29): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 14:54:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.category' in 'where clause'
+Request URL: /posts?title=&category=A&tag=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(29): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 15:24:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /posts/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1119): DboSource->execute('INSERT INTO `bl...')
+#3 /var/www/blog/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Post), Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /var/www/blog/app/Controller/PostsController.php(55): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-09-25 17:20:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.categoryname' in 'where clause'
+Request URL: /posts?title=&categoryname=A&tagname=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(28): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 17:47:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.name' in 'where clause'
+Request URL: /posts?title=&categoryname=A&tagname=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(28): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 17:47:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.name' in 'where clause'
+Request URL: /posts?title=&categoryname=A&tagname=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(28): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 17:48:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.name' in 'where clause'
+Request URL: /posts?title=&categoryname=A&tagname=
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(28): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 18:18:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Tag.tagname' in 'where clause'
+Request URL: /posts?title=&categoryname=&tagname=AAAA
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Post), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#7 /var/www/blog/app/Controller/PostsController.php(28): PaginatorComponent->paginate()
+#8 [internal function]: PostsController->index()
+#9 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-09-25 18:50:08 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /app/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

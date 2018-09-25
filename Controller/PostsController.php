@@ -13,7 +13,8 @@ class PostsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator','Search.Prg');
+	public $presetVars = true;
 
 /**
  * index method
@@ -21,7 +22,9 @@ class PostsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Post->recursive = 0;
+		//$this->Post->recursive = 0;
+$this->Prg->commonProcess();
+$this->paginate = array('conditions' => $this->Post->parseCriteria($this->passedArgs));
 		$this->set('posts', $this->Paginator->paginate());
 	}
 
@@ -49,7 +52,16 @@ class PostsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Post->create();
 			if ($this->Post->save($this->request->data)) {
-				$this->Flash->success(__('The post has been saved.'));
+			
+			/* ob_start();//チェック
+                                var_dump($this->request->data);
+                                $result = ob_get_contents();
+                                ob_end_clean();
+                                $fp = fopen("./upload/dump.txt", "a+" );
+                                fputs($fp, $result);
+                                fclose( $fp );*/       
+
+	$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Flash->error(__('The post could not be saved. Please, try again.'));
@@ -59,7 +71,9 @@ class PostsController extends AppController {
 		$this->set(compact('users'));
 		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
 		$this->set(compact('categories'));
-	}
+	$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$this->set(compact('tags'));
+}
 
 /**
  * edit method
