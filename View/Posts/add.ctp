@@ -1,13 +1,14 @@
 <div class="posts form">
-<?php echo $this->Form->create('Post'); ?>
+<?php echo $this->Form->create('Post',array('type'=>'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Post'); ?></legend>
+		<legend><?php echo __('Add Post',array('type'=>'file')); ?></legend>
 	<?php
 		echo $this->Form->input('title');
 		echo $this->Form->input('user_id',array('type'=>'select','options'=>$users));
 		echo $this->Form->input('category_id',array('type'=>'select','options'=>$categories));
 		echo $this->Form->input('Tag',array('type'=>'select','options'=>$tags,'multiple' =>'checkbox'));
 		echo $this->Form->input('body');
+		echo $this->Form->input('Image.0.filename',array('type' => 'file')); 
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

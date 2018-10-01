@@ -21,7 +21,16 @@
 			<?php echo h($post['Post']['body']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Image'); ?></dt>
+		<dd>
+		<?php
+     if($post['Image'][0]['filename']){		
+     $base = $this->Html->url('/files/image/filename/'); 
+     echo $this->Html->image($base.$post['Image'][0]['id'].'/'.$post['Image'][0]['filename']);
+     } 
+     ?>&nbsp;		
+		</dd
+		><dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($post['Post']['created']); ?>
 			&nbsp;
