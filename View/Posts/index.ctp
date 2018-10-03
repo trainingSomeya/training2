@@ -69,6 +69,8 @@
 				<!-- 各ブログの内容表示 -->
 				<div class="col-md-8">
 					<?php foreach ($posts as $post): ?>
+<!-- チェック用 -->
+	<?php var_dump($post); ?>&nbsp;
 					<div class="box">
 						<!-- タイトル部分 -->
 						<h2><?php echo h($post['Post']['title']); ?>&nbsp;<br>

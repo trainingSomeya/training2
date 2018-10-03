@@ -56,14 +56,14 @@ class PostsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Post->create();
 			if ($this->Post->saveall($this->request->data)) {
-
-			/* ob_start();//チェック
+				$this->request->data['Post']['user_id'] = $this->Auth->user('id');
+			 ob_start();//チェック
 				var_dump($this->request->data);
 				$result = ob_get_contents();
 				ob_end_clean();
 				$fp = fopen("./upload/dump.txt", "a+" );
 				fputs($fp, $result);
-			fclose( $fp );*/       
+			fclose( $fp );      
 
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -128,4 +128,11 @@ class PostsController extends AppController {
 	public function jqtest() {
 
 	}
+
+	public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('index', 'view');
+	}	
+
+
 }

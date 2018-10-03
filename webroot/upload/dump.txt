@@ -21,3 +21,89 @@ array(2) {
     }
   }
 }
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "2"
+    ["title"]=>
+    string(3) "aaa"
+    ["body"]=>
+    string(4) "aaaa"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(2) {
+      [0]=>
+      string(1) "2"
+      [1]=>
+      string(1) "4"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    [0]=>
+    array(1) {
+      ["Filename"]=>
+      array(5) {
+        ["name"]=>
+        string(13) "03-yellow.png"
+        ["type"]=>
+        string(9) "image/png"
+        ["tmp_name"]=>
+        string(14) "/tmp/phpq1UQMT"
+        ["error"]=>
+        int(0)
+        ["size"]=>
+        int(2290)
+      }
+    }
+  }
+}
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "2"
+    ["title"]=>
+    string(2) "gg"
+    ["body"]=>
+    string(2) "gg"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(3) {
+      [0]=>
+      string(1) "1"
+      [1]=>
+      string(1) "3"
+      [2]=>
+      string(1) "5"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    [0]=>
+    array(1) {
+      ["Filename"]=>
+      array(5) {
+        ["name"]=>
+        string(13) "03-yellow.png"
+        ["type"]=>
+        string(9) "image/png"
+        ["tmp_name"]=>
+        string(14) "/tmp/phpPn208R"
+        ["error"]=>
+        int(0)
+        ["size"]=>
+        int(2290)
+      }
+    }
+  }
+}

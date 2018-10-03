@@ -117,4 +117,49 @@ class UsersController extends AppController {
 			return json_encode(null);
 		}
 	}
+ 
+public function beforeFilter() {
+    parent::beforeFilter();
+    // ユーザー自身による登録とログアウトを許可する
+    $this->Auth->allow('add', 'logout');
+}
+
+public function login() {
+    if ($this->request->is('post')) {
+        if ($this->Auth->login()) {
+            return $this->redirect($this->Auth->redirect());
+        }
+        $this->Session->setFlash(__('Your username or password was incorrect.'));
+    }
+}
+
+public function logout() {
+	$this->Session->setFlash('Good-Bye');
+$this->redirect($this->Auth->logout());
+}
+
+/*public function initDB() {
+    $group = $this->User->Group;
+    //管理者グループには全てを許可する
+    $group->id = 1;
+    $this->Acl->allow($group, 'controllers');
+
+    //マネージャグループには posts と widgets に対するアクセスを許可する
+    $group->id = 2;
+    $this->Acl->deny($group, 'controllers');
+    $this->Acl->allow($group, 'controllers/Posts');
+    $this->Acl->allow($group, 'controllers/Widgets');
+
+    //ユーザグループには posts と widgets に対する追加と編集を許可する
+    $group->id = 3;
+    $this->Acl->deny($group, 'controllers');
+    $this->Acl->allow($group, 'controllers/Posts/add');
+    $this->Acl->allow($group, 'controllers/Posts/edit');
+    $this->Acl->allow($group, 'controllers/Widgets/add');
+    $this->Acl->allow($group, 'controllers/Widgets/edit');
+    //馬鹿げた「ビューが見つからない」というエラーメッセージを表示させないために exit を追加します
+    echo "all done";
+    exit;
+}*/
+
 }

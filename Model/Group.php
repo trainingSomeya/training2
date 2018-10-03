@@ -7,6 +7,7 @@ App::uses('AppModel', 'Model');
  */
 class Group extends AppModel {
 
+	public $actsAs = array('Acl' => array('type' => 'requester'));
 /**
  * Validation rules
  *
@@ -48,4 +49,7 @@ class Group extends AppModel {
 		)
 	);
 
+	public function parentNode() {
+		return null;
+	}
 }
