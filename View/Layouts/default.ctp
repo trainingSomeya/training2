@@ -177,11 +177,11 @@ font-size: 18px
 			<div class="collapse navbar-collapse" id="navbarAction">
 				<ul class="nav navbar-nav">
 					<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?></li>
-					<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></li>
 					<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?></li>
-					<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts','action' => 'add')); ?></li>
 					<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?></li>
-					<li><?php echo $this->Html->link(__('New Group'), array('action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?></li>
 					<li><?php echo $this->Html->link(__('JQ Test'), array('controller' => 'posts', 'action' => 'index')); ?></li>
 				</ul>
 			</div>

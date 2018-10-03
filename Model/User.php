@@ -60,7 +60,8 @@ class User extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
+		'PostalCode'
 	);
 
 /**

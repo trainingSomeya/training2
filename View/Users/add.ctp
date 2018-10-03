@@ -1,23 +1,41 @@
-<div class="users form">
-<?php echo $this->Form->create('User'); ?>
-	<fieldset>
-		<legend><?php echo __('Add User'); ?></legend>
-	<?php
-		echo $this->Form->input('username');
-		echo $this->Form->input('password');
-		echo $this->Form->input('group_id');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?> </li>
-	</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/addressSearch.js"></script>
+<div class="container">
+	<div class="row box">
+		<div class="users form">
+			<?php echo $this->Form->create('User',array('inputDefaults'=>array('class'=>'form-control'))); ?>
+			<form>
+				<legend><?php echo __('Add User'); ?></legend>
+				<div class="form-group">
+					<?php echo $this->Form->input('username'); ?>
+				</div>
+				<div class="form-group">
+					<?php echo $this->Form->input('password'); ?>
+				</div>
+				<div class="form-group">
+					<?php echo $this->Form->input('group_id'); ?>
+				</div>
+				<div class="form-group">
+					<!-- 郵便番号入力のテキストボックス -->
+					<div class="well">
+						<p>郵便番号検索<input type="text" id="zipcode" value="" maxlength="7" title="郵便番号検索">
+						<input type="button" id="search_btn" value="検索">
+						※7桁の半角数字で入力</p>
+						<!-- 検索結果の表示エリア -->
+						<p>検索結果
+						<select id="zip_result"></select>	
+						<input type="button" id="select_btn" value="入力">
+						</p>
+					</div>
+				</div>	
+				<div class="form-group">
+					<?php echo $this->Form->input('address',array("id"=>"select_result")); ?>
+				</div>
+				<div class="form-group">
+					<?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary btn-lg')); ?>
+				</div>
+			</form>
+			<?php echo $this->Form->end(); ?>
+		</div>
+	</div>
 </div>

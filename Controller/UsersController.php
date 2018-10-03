@@ -13,7 +13,7 @@ class UsersController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator');
+	public $components = array('Paginator','Flash','Search.Prg');
 
 /**
  * index method
@@ -104,5 +104,17 @@ class UsersController extends AppController {
 			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	public function search(){
+		$this->autoRender = false;
+		if($this->request->is('ajax')) {
+			$zipcode = "0.".$this->request->data('zipcode');
+			$options = array('conditions'=>array('zipcode'=>$zipcode));
+			if($result = $this->User->PostalCode->find('all',$options)){
+				return json_encode($result);
+			}
+			return json_encode(null);
+		}
 	}
 }

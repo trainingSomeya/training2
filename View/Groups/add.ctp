@@ -1,19 +1,11 @@
-<div class="groups form">
-<?php echo $this->Form->create('Group'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Group'); ?></legend>
-	<?php
-		echo $this->Form->input('name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<div class="container">
+	<div class="groups form">
+		<?php echo $this->Form->create('Group',array('inputDefaults'=>array('class'=>'form-control'))); ?>
+		<form>
+			<legend><?php echo __('Add Group'); ?></legend>
+			<div class="form-group"><?php echo $this->Form->input('name');?></div>
+			<div class="form-group"><?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary btn-lg')); ?></div>
+		</form>
+	<?php echo $this->Form->end(); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
