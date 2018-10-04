@@ -45,6 +45,10 @@ class PostsController extends AppController {
 		}
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 		$this->set('post', $this->Post->find('first', $options));
+		// ログインユーザーの情報を取得
+		$user = $this->Auth->user();
+		$this->set('user', $user);
+		//var_dump($user);
 	}
 
 	/**
@@ -57,13 +61,13 @@ class PostsController extends AppController {
 			$this->Post->create();
 			if ($this->Post->saveall($this->request->data)) {
 				$this->request->data['Post']['user_id'] = $this->Auth->user('id');
-			 ob_start();//チェック
+		/*	 ob_start();//チェック
 				var_dump($this->request->data);
 				$result = ob_get_contents();
 				ob_end_clean();
 				$fp = fopen("./upload/dump.txt", "a+" );
 				fputs($fp, $result);
-			fclose( $fp );      
+				fclose( $fp );      */
 
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));

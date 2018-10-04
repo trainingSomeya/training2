@@ -107,3 +107,192 @@ array(3) {
     }
   }
 }
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "1"
+    ["title"]=>
+    string(1) "d"
+    ["body"]=>
+    string(1) "a"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(2) {
+      [0]=>
+      string(1) "1"
+      [1]=>
+      string(1) "3"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    ["img"]=>
+    array(5) {
+      ["name"]=>
+      string(13) "03-yellow.png"
+      ["type"]=>
+      string(9) "image/png"
+      ["tmp_name"]=>
+      string(14) "/tmp/phpyYwrEW"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(2290)
+    }
+  }
+}
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "1"
+    ["title"]=>
+    string(1) "r"
+    ["body"]=>
+    string(1) "5"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(1) {
+      [0]=>
+      string(1) "4"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    ["img"]=>
+    array(5) {
+      ["name"]=>
+      string(13) "03-yellow.png"
+      ["type"]=>
+      string(9) "image/png"
+      ["tmp_name"]=>
+      string(14) "/tmp/phpvPitLd"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(2290)
+    }
+  }
+}
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "3"
+    ["user_id"]=>
+    string(1) "1"
+    ["title"]=>
+    string(1) "s"
+    ["body"]=>
+    string(1) "f"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(1) {
+      [0]=>
+      string(1) "4"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    ["img"]=>
+    array(5) {
+      ["name"]=>
+      string(13) "03-yellow.png"
+      ["type"]=>
+      string(9) "image/png"
+      ["tmp_name"]=>
+      string(14) "/tmp/phpqrKXDC"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(2290)
+    }
+  }
+}
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "1"
+    ["title"]=>
+    string(1) "g"
+    ["body"]=>
+    string(1) "g"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    string(0) ""
+  }
+  ["Image"]=>
+  array(1) {
+    ["img"]=>
+    array(5) {
+      ["name"]=>
+      string(13) "03-yellow.png"
+      ["type"]=>
+      string(9) "image/png"
+      ["tmp_name"]=>
+      string(14) "/tmp/phpYlmY3r"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(2290)
+    }
+  }
+}
+array(3) {
+  ["Post"]=>
+  array(4) {
+    ["category_id"]=>
+    string(1) "1"
+    ["user_id"]=>
+    string(1) "1"
+    ["title"]=>
+    string(1) "a"
+    ["body"]=>
+    string(1) "d"
+  }
+  ["Tag"]=>
+  array(1) {
+    ["Tag"]=>
+    array(2) {
+      [0]=>
+      string(1) "2"
+      [1]=>
+      string(1) "3"
+    }
+  }
+  ["Image"]=>
+  array(1) {
+    [0]=>
+    array(1) {
+      ["filename"]=>
+      array(5) {
+        ["name"]=>
+        string(13) "03-yellow.png"
+        ["type"]=>
+        string(9) "image/png"
+        ["tmp_name"]=>
+        string(14) "/tmp/phptN8jDh"
+        ["error"]=>
+        int(0)
+        ["size"]=>
+        int(2290)
+      }
+    }
+  }
+}
