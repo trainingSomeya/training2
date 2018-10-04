@@ -49,6 +49,8 @@ class PostsController extends AppController {
 		$user = $this->Auth->user();
 		$this->set('user', $user);
 		//var_dump($user);
+		//
+		var_dump($this->Post->find('first', $options));
 	}
 
 	/**
@@ -135,8 +137,15 @@ class PostsController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view');
+		$this->Auth->allow('index', 'view', 'image');
 	}	
 
+	public function image($file) {
+		$image = "{ROOT}image/files/{model}/{field}/" . $file;
 
+		if (!file_exists($image)) {
+			throw new NotFoundException();
+		}
+		return new CakeResponse(array('type' => 'image/png', 'body' => readfile($image)));
+	}
 }

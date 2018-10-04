@@ -10,6 +10,7 @@ class Image extends AppModel {
 		'Upload.Upload' => array(
 			//画像保存用のフィールド名
 			'filename' => array(
+				'path' => '{ROOT}image/files/{model}/{field}/'
 			)
 		)
 	);

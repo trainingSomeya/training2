@@ -46,12 +46,13 @@
 			<?php
 	     if($user['id'] == $post['User']['id']){
 	     if($post['Image'][0]['filename']){		
-	     $base = $this->Html->url('/files/image/filename/'); 
+	     $base = $this->Html->url('/../image/files/image/filename/'); 
 	     echo $this->Html->image($base.$post['Image'][0]['id'].'/'.$post['Image'][0]['filename']);
 	     }
 	     }else {
 	     echo '画像を上げたユーザーのみが閲覧可能です';
 	     }	
+	     echo $this->Html->image('/Posts/image/hoge.png');
 	     ?>&nbsp;
 			</dd>
 
