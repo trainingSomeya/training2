@@ -8,30 +8,30 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
-	/**
-	 * Components
-	 *
-	 * @var array
-	 */
-	public $components = array('Paginator','Flash','Search.Prg','Auth');
+/**
+ * Components
+ *
+ * @var array
+ */
+	public $components = array('Paginator','Flash','Search.Prg');
 
-	/**
-	 * index method
-	 *
-	 * @return void
-	 */
+/**
+ * index method
+ *
+ * @return void
+ */
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
 	}
 
-	/**
-	 * view method
-	 *
-	 * @throws NotFoundException
-	 * @param string $id
-	 * @return void
-	 */
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
 	public function view($id = null) {
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
@@ -40,11 +40,11 @@ class UsersController extends AppController {
 		$this->set('user', $this->User->find('first', $options));
 	}
 
-	/**
-	 * add method
-	 *
-	 * @return void
-	 */
+/**
+ * add method
+ *
+ * @return void
+ */
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->User->create();
@@ -59,13 +59,13 @@ class UsersController extends AppController {
 		$this->set(compact('groups'));
 	}
 
-	/**
-	 * edit method
-	 *
-	 * @throws NotFoundException
-	 * @param string $id
-	 * @return void
-	 */
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
 	public function edit($id = null) {
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
@@ -85,13 +85,13 @@ class UsersController extends AppController {
 		$this->set(compact('groups'));
 	}
 
-	/**
-	 * delete method
-	 *
-	 * @throws NotFoundException
-	 * @param string $id
-	 * @return void
-	 */
+/**
+ * delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
 	public function delete($id = null) {
 		$this->User->id = $id;
 		if (!$this->User->exists()) {
@@ -117,51 +117,28 @@ class UsersController extends AppController {
 			return json_encode(null);
 		}
 	}
+ 
+public function beforeFilter() {
+    parent::beforeFilter();
+    // ユーザー自身による登録とログアウトを許可する
+    $this->Auth->allow('add', 'logout','initDB');
+}
 
-	public function beforeFilter() {
-		parent::beforeFilter();
-		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout','signup','activate');
-	}
+public function login() {
+    if ($this->request->is('post')) {
+        if ($this->Auth->login()) {
+            return $this->redirect($this->Auth->redirect());
+        }
+        $this->Session->setFlash(__('Your username or password was incorrect.'));
+    }
+}
 
-	public function login() {
-		if ($this->request->is('post')) {
-			if ($this->Auth->login()) {
-				return $this->redirect($this->Auth->redirect());
-			}
-			$this->Session->setFlash(__('Your username or password was incorrect.'));
-		}
-	}
+public function logout() {
+	$this->Session->setFlash('Good-Bye');
+$this->redirect($this->Auth->logout());
+}
 
-	public function logout() {
-		$this->Session->setFlash('Good-Bye');
-		$this->redirect($this->Auth->logout());
-	}
-
-	public function signup(){
-		if (!empty( $this->data)){
-			//  保存
-			if( $this->User->save( $this->data)){
-				// ユーザアクティベート(本登録)用URLの作成
-				$url = 
-					DS . strtolower($this->name) .          // コントローラ
-					DS . 'activate' .                       // アクション
-					DS . $this->User->id .                  // ユーザID
-					DS . $this->User->getActivationHash();  // ハッシュ値
-				$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
-				//  メール送信
-				//  return
-				$this->Session->setFlash( '仮登録成功。メール送信しました。');
-			} else {
-				//  バリデーションエラーメッセージを渡す
-				$this->Session->setFlash( '入力エラー');
-			}
-		}
-	}
-	public function activate(){
-	}
-
-/* public function initDB() {
+public function initDB() {
     $group = $this->User->Group;
     //管理者グループには全てを許可する
     $group->id = 1;
@@ -183,6 +160,6 @@ class UsersController extends AppController {
     //馬鹿げた「ビューが見つからない」というエラーメッセージを表示させないために exit を追加します
     echo "all done";
     exit;
-} */
+}
 
 }
