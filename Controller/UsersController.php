@@ -121,7 +121,7 @@ class UsersController extends AppController {
 public function beforeFilter() {
     parent::beforeFilter();
     // ユーザー自身による登録とログアウトを許可する
-    $this->Auth->allow('add', 'logout');
+    $this->Auth->allow('add', 'logout','initDB');
 }
 
 public function login() {
@@ -138,7 +138,7 @@ public function logout() {
 $this->redirect($this->Auth->logout());
 }
 
-/*public function initDB() {
+public function initDB() {
     $group = $this->User->Group;
     //管理者グループには全てを許可する
     $group->id = 1;
@@ -160,6 +160,6 @@ $this->redirect($this->Auth->logout());
     //馬鹿げた「ビューが見つからない」というエラーメッセージを表示させないために exit を追加します
     echo "all done";
     exit;
-}*/
+}
 
 }

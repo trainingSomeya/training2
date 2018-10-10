@@ -50,7 +50,30 @@ class PostsController extends AppController {
 		$this->set('user', $user);
 		//var_dump($user);
 		//
-		var_dump($this->Post->find('first', $options));
+		//	var_dump($this->Post->find('first', $options));
+
+		/*$post = $this->Post->find('first', $options);
+
+		$fileid	= $this->Image->id;
+		$file = $this->Image->filename;
+		$image = "{ROOT}image/files/{model}/{field}/" .$fileid. $file;
+
+		if (!file_exists($image)) {
+			throw new NotFoundException();
+		}
+		return new CakeResponse(array('type' => 'image/png', 'body' => readfile($image)));*/
+		
+		/* $post = $this->Post->find('first', $options);
+
+		$this->autoRender = false;
+
+		$mime_type = "image/png";
+		$file_path = "image/files/image/filename/".$post['Image'][0]['id'].'/'.$post['Image'][0]['filename'];
+
+		$this->response->type($mime_type);
+		$this->response->file($file_path);
+		//	echo $this->response; */
+
 	}
 
 	/**
@@ -69,7 +92,7 @@ class PostsController extends AppController {
 				ob_end_clean();
 				$fp = fopen("./upload/dump.txt", "a+" );
 				fputs($fp, $result);
-				fclose( $fp );      */
+		fclose( $fp );      */
 
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -137,15 +160,26 @@ class PostsController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view', 'image');
+		$this->Auth->allow('index', 'view');
 	}	
 
-	public function image($file) {
-		$image = "{ROOT}image/files/{model}/{field}/" . $file;
-
-		if (!file_exists($image)) {
-			throw new NotFoundException();
+	public function image($id = null) {
+		if (!$this->Post->exists($id)) {
+			throw new NotFoundException(__('Invalid post'));
 		}
-		return new CakeResponse(array('type' => 'image/png', 'body' => readfile($image)));
+		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+
+		$post = $this->Post->find('first', $options);
+
+		$this->autoRender = false;
+
+		$mime_type = "image/png";
+		$file_path = "image/files/image/filename/".$post['Image'][0]['id'].'/'.$post['Image'][0]['filename'];
+
+		$this->response->type($mime_type);
+		$this->response->file($file_path);
+		//	echo $this->response; 
+
+
 	}
 }
