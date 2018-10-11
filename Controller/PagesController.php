@@ -19,6 +19,7 @@
  */
 
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 
 /**
  * Static content controller
@@ -76,5 +77,18 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+
+	public function register() {
+		$this->loadModel('Register');
+		if ($this->request->is('post')) {
+			$email = new CakeEmail();
+			$email->config('Register'); //$registerの設定を読み込む。
+			$email->viewVars($this->request->data['Contact']); //送信内容をテンプレートファイルに渡す
+			if($email->send()){
+				//メール送信が成功した場合ここで処理
+			}
+		}
+		$this->render();
 	}
 }

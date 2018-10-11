@@ -46,10 +46,9 @@ class EmailConfig {
 	public $gmail = array(
 		'host' => 'ssl://smtp.gmail.com',
 		'port' => 465,
-		'username' => 'username@gmail.com', // ユーザ名
-		'password' => 'password',           // パスワード
+		'username' => 'someya.training@gmail.com', // ユーザ名
+		'password' => 'someya0209',           // パスワード
 		'transport' => 'Smtp',
-		'tls' => true
 	);
 	
 	public $smtp = array(
@@ -96,5 +95,15 @@ class EmailConfig {
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
+
+	public $register = array(
+		'transport' => 'Mail',
+		'from' => array('info@example.com' =>'SiteName'),
+		'to' => array('someya0209@gmail.com' =>'SiteName'),
+		'subject' => 'お問い合わせがあります',
+		'sendAs' => 'text',
+		'template' => 'register',
+	);
+
 
 }

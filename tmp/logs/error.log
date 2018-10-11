@@ -4883,3 +4883,468 @@ Stack Trace:
 #10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2018-10-11 14:17:32 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 14:17:34 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 14:17:41 Error: [MissingViewException] View file "Users/register.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/register.ctp',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/blog/app/Controller/UsersController.php(174): Controller->render()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 14:22:07 Error: [MissingTableException] Table registers for model Register was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'registers',
+  'class' => 'Register',
+  'ds' => 'default',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Model.php(3673): Model->setSource('registers')
+#1 /var/www/blog/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /var/www/blog/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/blog/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Register', 'fields')
+#4 /var/www/blog/app/View/Users/register.ctp(2): FormHelper->create('Register')
+#5 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#7 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#9 /var/www/blog/app/Controller/UsersController.php(174): Controller->render()
+#10 [internal function]: UsersController->register()
+#11 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2018-10-11 14:26:03 Error: [MissingViewException] View file "Emails/text/contact.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Emails/text/contact.ctp',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(470): View->_getViewFileName('contact')
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1720): View->render('contact', 'default')
+#2 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1572): CakeEmail->_renderTemplates('')
+#3 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1181): CakeEmail->_render(Array)
+#4 /var/www/blog/app/Controller/UsersController.php(170): CakeEmail->send()
+#5 [internal function]: UsersController->register()
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-10-11 14:33:56 Error: [SocketException] Could not send email: unknown
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????test ?...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(170): CakeEmail->send()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 14:44:47 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(170): CakeEmail->send()
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 14:45:00 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 14:45:11 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(170): CakeEmail->send()
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 14:45:59 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(170): CakeEmail->send()
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 14:46:42 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(171): CakeEmail->send()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 15:04:46 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(171): CakeEmail->send()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 15:05:41 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(171): CakeEmail->send()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 15:31:27 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(172): CakeEmail->send()
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 15:34:47 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 15:45:40 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: Name or service not known
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(146): CakeSocket->connect()
+#1 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#2 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#4 [internal function]: UsersController->register()
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-11 16:03:37 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:10:26 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:11:18 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:29:05 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:52:29 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:53:03 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 16:53:26 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(87): SmtpTransport->_auth()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 17:29:40 Error: [SocketException] SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/SmtpTransport.php(86): SmtpTransport->_connect()
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(175): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 17:35:25 Error: [ConfigureException] Unknown email configuration "contact".
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1158): CakeEmail->_applyConfig('contact')
+#1 /var/www/blog/app/Controller/UsersController.php(172): CakeEmail->config('contact')
+#2 [internal function]: UsersController->register()
+#3 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-10-11 17:35:46 Error: [SocketException] Could not send email: unknown
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(174): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 17:35:52 Error: [SocketException] Could not send email: unknown
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(174): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 17:36:07 Error: [SocketException] Could not send email: unknown
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/UsersController.php(174): CakeEmail->send('???????????????')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 17:47:35 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(173): CakeEmail->send('???????????????')
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 17:52:01 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(173): CakeEmail->send('???????????????')
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 18:12:43 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 18:23:44 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(174): CakeEmail->send('???????????????')
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 18:24:14 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(174): CakeEmail->send('???????????????')
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 18:25:47 Error: [SocketException] The email set for "_to" is empty.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(592): CakeEmail->_validateEmail('', '_to')
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(466): CakeEmail->_setEmail('_to', '', NULL)
+#2 /var/www/blog/app/Controller/UsersController.php(171): CakeEmail->to('')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-11 18:56:55 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/app/Controller/UsersController.php(173): CakeEmail->send('???????????????')
+#1 [internal function]: UsersController->register()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-11 19:13:04 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 19:13:05 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 19:13:09 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-11 19:15:52 Error: [SocketException] The email set for "_to" is empty.
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(592): CakeEmail->_validateEmail('', '_to')
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(466): CakeEmail->_setEmail('_to', '', NULL)
+#2 /var/www/blog/app/Controller/UsersController.php(171): CakeEmail->to('')
+#3 [internal function]: UsersController->register()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

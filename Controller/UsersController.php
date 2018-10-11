@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Users Controller
  *
@@ -121,7 +122,7 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout','signup','activate');
+		$this->Auth->allow('add', 'logout','signup','activate','register');
 	}
 
 	public function login() {
@@ -160,6 +161,19 @@ class UsersController extends AppController {
 	}
 	public function activate(){
 	}
+
+	public function register() {
+                $this->loadModel('User');
+                if ($this->request->is('post')) {
+			//読み込む設定ファイルの変数名を指定
+			$email = new CakeEmail('gmail');
+			$email->from('someya.training@gmail.com');
+			$email->to($this->request->data['User']['username']);
+			//メール送信する
+			$email->send('メール本文'); 
+ 		}
+                $this->render();
+        }
 
 /* public function initDB() {
     $group = $this->User->Group;
