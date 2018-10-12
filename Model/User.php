@@ -22,8 +22,6 @@ class User extends AppModel {
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 			),
-			// メールアドレスであること。
-			'validEmail' => array( 'rule' => array( 'email', true), 'message' => 'アドレスを入力して下さい'),
 			// 一意性チェック
 			'emailExists' => array( 'rule' => 'isUnique', 'message' => '既に登録されています'),
 		),
@@ -66,7 +64,8 @@ class User extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'PostalCode'
+		'PostalCode',
+		'PreMember'
 	);
 
 	/**
@@ -88,6 +87,10 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		)
+	);
+
+	public $hasOne = array(
+		'PreMember'
 	);
 
 	/* public function beforeSave($options = array()) {

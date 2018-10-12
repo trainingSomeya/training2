@@ -184,6 +184,7 @@ font-size: 18px
 					<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?></li>
 					<li><?php echo $this->Html->link(__('JQ Test'), array('controller' => 'posts', 'action' => 'index')); ?></li>
 					<li><?php echo $this->Html->link(__('logout'), array('controller' => 'users', 'action' => 'logout')); ?></li>
+					<li><?php echo $this->Html->link(__('register'), array('controller' => 'pre_members', 'action' => 'index')); ?></li>
 				</ul>
 			</div>
 		</div>

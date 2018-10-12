@@ -46,7 +46,10 @@ class UsersController extends AppController {
 	 *
 	 * @return void
 	 */
-	public function add() {
+	public function add($id=null,$urltoken=null) {
+		$premenbers = $this->User->PreMember->findById($id);
+		//var_dump($premenbers['PreMember']['urltoken']);
+	if($urltoken==$premenbers['PreMember']['urltoken']){	
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
@@ -56,6 +59,9 @@ class UsersController extends AppController {
 				$this->Flash->error(__('The user could not be saved. Please, try again.'));
 			}
 		}
+	}else{
+	return $this->redirect(array('action' => 'index'));
+	}
 		$groups = $this->User->Group->find('list');
 		$this->set(compact('groups'));
 	}
@@ -122,7 +128,7 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout','signup','activate','register');
+		$this->Auth->allow('add', 'logout');
 	}
 
 	public function login() {
@@ -139,41 +145,6 @@ class UsersController extends AppController {
 		$this->redirect($this->Auth->logout());
 	}
 
-	public function signup(){
-		if (!empty( $this->data)){
-			//  保存
-			if( $this->User->save( $this->data)){
-				// ユーザアクティベート(本登録)用URLの作成
-				$url = 
-					DS . strtolower($this->name) .          // コントローラ
-					DS . 'activate' .                       // アクション
-					DS . $this->User->id .                  // ユーザID
-					DS . $this->User->getActivationHash();  // ハッシュ値
-				$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
-				//  メール送信
-				//  return
-				$this->Session->setFlash( '仮登録成功。メール送信しました。');
-			} else {
-				//  バリデーションエラーメッセージを渡す
-				$this->Session->setFlash( '入力エラー');
-			}
-		}
-	}
-	public function activate(){
-	}
-
-	public function register() {
-                $this->loadModel('User');
-                if ($this->request->is('post')) {
-			//読み込む設定ファイルの変数名を指定
-			$email = new CakeEmail('gmail');
-			$email->from('someya.training@gmail.com');
-			$email->to($this->request->data['User']['username']);
-			//メール送信する
-			$email->send('メール本文'); 
- 		}
-                $this->render();
-        }
 
 /* public function initDB() {
     $group = $this->User->Group;

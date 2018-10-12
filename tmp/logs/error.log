@@ -5348,3 +5348,281 @@ Stack Trace:
 #6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2018-10-12 12:43:00 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-12 12:43:07 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-12 12:43:09 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /users/register
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-10-12 14:20:19 Error: [SocketException] You need to specify at least one destination for to, cc or bcc.
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/app/Controller/PreMembersController.php(32): CakeEmail->send('???????????????')
+#1 [internal function]: PreMembersController->index()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-10-12 15:41:04 Error: Fatal Error (1): Call to a member function getActivationHash() on a non-object in [/var/www/blog/app/Controller/PreMembersController.php, line 32]
+2018-10-12 15:41:04 Error: [FatalErrorException] Call to a member function getActivationHash() on a non-object
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 32, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 32, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-12 15:42:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getActivationHash' at line 1
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('getActivationHa...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('getActivationHa...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(635): DboSource->fetchAll('getActivationHa...', Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(834): DboSource->query('getActivationHa...', Array, Object(PreMember))
+#5 /var/www/blog/app/Controller/PreMembersController.php(31): Model->__call('getActivationHa...', Array)
+#6 /var/www/blog/app/Controller/PreMembersController.php(31): PreMember->getActivationHash()
+#7 [internal function]: PreMembersController->index()
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-10-12 15:44:46 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/blog/app/Controller/PreMembersController.php, line 30]
+2018-10-12 15:44:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 30, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 30, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-12 15:45:29 Error: [MissingControllerException] Controller class PremembersController could not be found.
+Exception Attributes: array (
+  'class' => 'PremembersController',
+  'plugin' => NULL,
+)
+Request URL: /premembers/activate
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-12 16:12:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(31): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:20:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(31): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:21:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(31): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:25:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(32): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:25:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(32): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:25:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(32): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:25:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(32): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:25:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(32): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 16:27:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.modified' in 'field list'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `PreMemb...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `PreMemb...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `PreMemb...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(PreMember), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(1666): Model->find('first', Array)
+#7 /var/www/blog/app/Model/PreMember.php(30): Model->field('modified')
+#8 /var/www/blog/app/Controller/PreMembersController.php(33): PreMember->getActivationHash()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-10-12 17:03:42 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/blog/app/Controller/PreMembersController.php, line 30]
+2018-10-12 17:03:42 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 30, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 30, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-12 19:11:24 Error: [MissingControllerException] Controller class PreMemberController could not be found.
+Exception Attributes: array (
+  'class' => 'PreMemberController',
+  'plugin' => NULL,
+)
+Request URL: /pre_member
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-12 19:12:04 Error: [MissingControllerException] Controller class PreMemberController could not be found.
+Exception Attributes: array (
+  'class' => 'PreMemberController',
+  'plugin' => NULL,
+)
+Request URL: /pre_member
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
