@@ -4,6 +4,8 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class PreMember extends AppModel {
 
+	public $displayField = 'mail';
+
 	public $validate = array(
 		'mail' => array(
 			array(
@@ -27,7 +29,7 @@ class PreMember extends AppModel {
 			return false;
 		}
 		// 更新日時をハッシュ化
-		return Security::hash( $this->field('created'), 'md5', true);
+		return Security::hash( $this->field('modified'), 'md5', true);
 	}
 
 }

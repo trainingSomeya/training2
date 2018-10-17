@@ -7,7 +7,8 @@
 			<form>
 				<legend><?php echo __('Add User'); ?></legend>
 				<div class="form-group">
-					<?php echo $this->Form->input('username'); ?>
+<?php //var_dump($premembers); 
+echo $this->Form->input('username', array('default'=>$premembers['PreMember']['mail'])); ?>
 				</div>
 				<div class="form-group">
 					<?php echo $this->Form->input('password'); ?>

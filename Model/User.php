@@ -22,7 +22,6 @@ class User extends AppModel {
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 			),
-			// 一意性チェック
 			'emailExists' => array( 'rule' => 'isUnique', 'message' => '既に登録されています'),
 		),
 		'password' => array(
@@ -34,8 +33,6 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			// パスワード・確認用パスワードの一致
-			'match' => array( 'rule' => array( 'confirmPassword', 'password_confirm'), 'message' => '一致しません'),
 		),
 		'group_id' => array(
 			'numeric' => array(
@@ -65,7 +62,6 @@ class User extends AppModel {
 			'order' => ''
 		),
 		'PostalCode',
-		'PreMember'
 	);
 
 	/**
@@ -93,19 +89,11 @@ class User extends AppModel {
 		'PreMember'
 	);
 
-	/* public function beforeSave($options = array()) {
-		$this->data['User']['password'] = AuthComponent::password(
-			$this->data['User']['password']
-		);
-		return true;
-	} */
-
-	public function confirmPassword( $field, $password_confirm) {
-		if ($field['password'] === $this->data[$this->name][$password_confirm]) {
-			// パスワードハッシュ化
-			$this->data[$this->name]['password'] = Security::hash( $field['password'], 'sha512', true);
-			return true;
-		}
+	public function beforeSave($options = array()) {
+        $this->data['User']['password'] = AuthComponent::password(
+          $this->data['User']['password']
+        );
+        return true;
 	}
 
 	public function parentNode() {

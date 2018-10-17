@@ -47,22 +47,27 @@ class UsersController extends AppController {
 	 * @return void
 	 */
 	public function add($id=null,$urltoken=null) {
-		$premenbers = $this->User->PreMember->findById($id);
-		//var_dump($premenbers['PreMember']['urltoken']);
-	if($urltoken==$premenbers['PreMember']['urltoken']){	
-		if ($this->request->is('post')) {
-			$this->User->create();
-			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+		$premembers = $this->User->PreMember->findById($id);
+		$this->set('premembers',$premembers);
+		//var_dump($premembers['PreMember']['urltoken']);
+		//var_dump($premembers);
+		if($urltoken==$premembers['PreMember']['urltoken']){	
+			if ($this->request->is('post')) {
+				$this->User->create();
+				if ($this->User->save($this->request->data)) {
+					$this->Flash->success(__('The user has been saved.'));
+					$this->User->PreMember->delete($id);
+					return $this->redirect(array('controller'=>'users','action' => 'login'));
+				} else {
+					$this->Flash->error(__('The user could not be saved. Please, try again.'));
+				}
 			}
+		}else{
+			$this->Flash->error(__('Invalid url. please try again.'));
+			return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
 		}
-	}else{
-	return $this->redirect(array('action' => 'index'));
-	}
 		$groups = $this->User->Group->find('list');
+		//var_dump($groups);
 		$this->set(compact('groups'));
 	}
 

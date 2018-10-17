@@ -5626,3 +5626,379 @@ Request URL: /pre_member
 Stack Trace:
 #0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-10-17 10:07:30 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 10:07:30 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 11:14:06 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 11:14:06 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 11:14:06 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 11:14:06 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 15:28:41 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/blog/app/Controller/PreMembersController.php, line 30]
+2018-10-17 15:28:41 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /pre_members/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 30, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 30, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 16:12:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'PreMember'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/blog/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test1', 'test')
+#8 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(772): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(612): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/blog/app/Controller/UsersController.php(136): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-10-17 16:14:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'PreMember'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/blog/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test1', 'test')
+#8 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(772): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(612): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/blog/app/Controller/UsersController.php(136): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-10-17 16:16:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'PreMember'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/blog/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test1', 'test')
+#8 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(772): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(612): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/blog/app/Controller/UsersController.php(136): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-10-17 16:16:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'PreMember'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/blog/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test1', 'test')
+#8 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(772): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(612): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/blog/app/Controller/UsersController.php(136): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-10-17 16:29:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PreMember.user_id' in 'on clause'
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /var/www/blog/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test1', 'test')
+#8 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(772): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/blog/lib/Cake/Controller/Component/AuthComponent.php(612): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/blog/app/Controller/UsersController.php(136): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-10-17 17:15:41 Error: Fatal Error (1): Call to a member function redirect() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 64]
+2018-10-17 17:15:41 Error: [FatalErrorException] Call to a member function redirect() on a non-object
+Request URL: /users/add/1/aefcc44871bb288cdd796dec3d4d1587
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 64, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 64, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 17:20:32 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 57]
+2018-10-17 17:20:32 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /users/add/1/5703ef3a5dc3c89a38286888ab8ddf64
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 57, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 57, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 17:22:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'someya' for key 'username'
+Request URL: /users/add/1/5703ef3a5dc3c89a38286888ab8ddf64
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1119): DboSource->execute('INSERT INTO `bl...')
+#3 /var/www/blog/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /var/www/blog/app/Controller/UsersController.php(55): Model->save(Array)
+#6 [internal function]: UsersController->add('1', '5703ef3a5dc3c89...')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-10-17 17:35:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'redirect' at line 1
+Request URL: /users/add/1/5703ef3a5dc3c89a38286888ab8ddf64
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('redirect', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('redirect', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(635): DboSource->fetchAll('redirect', Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(834): DboSource->query('redirect', Array, Object(PreMember))
+#5 /var/www/blog/app/Controller/UsersController.php(65): Model->__call('redirect', Array)
+#6 /var/www/blog/app/Controller/UsersController.php(65): PreMember->redirect(Array)
+#7 [internal function]: UsersController->add('1', '5703ef3a5dc3c89...')
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-10-17 17:37:47 Error: [MissingControllerException] Controller class PreMemberController could not be found.
+Exception Attributes: array (
+  'class' => 'PreMemberController',
+  'plugin' => NULL,
+)
+Request URL: /pre_member
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 17:38:11 Error: [MissingControllerException] Controller class PremembersController could not be found.
+Exception Attributes: array (
+  'class' => 'PremembersController',
+  'plugin' => NULL,
+)
+Request URL: /premembers/activate
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 17:38:14 Error: [MissingControllerException] Controller class PremembersController could not be found.
+Exception Attributes: array (
+  'class' => 'PremembersController',
+  'plugin' => NULL,
+)
+Request URL: /premembers/activate
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-10-17 18:06:27 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/blog/app/View/Users/add.ctp, line 9]
+2018-10-17 18:06:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/add/2/b08b3f0419be9d73b5b434d0a9b4e610
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 9, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 9, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 18:28:14 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/blog/app/Controller/UsersController.php, line 71]
+2018-10-17 18:28:14 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /users/add/2/b08b3f0419be9d73b5b434d0a9b4e610
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 71, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 71, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 18:48:58 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(57): CakeEmail->send('http://blog.dv/...')
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:49:31 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(57): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:52:05 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(57): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:52:58 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(58): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:53:45 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(58): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:54:32 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '?????????<pre c...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(58): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 18:58:12 Error: [SocketException] Could not send email: unknown
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Network/Email/MailTransport.php(52): MailTransport->_mail('SiteName <somey...', '=?UTF-8?B?44GK5...', '????????????som...', 'From: SiteName ...', NULL)
+#1 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 /var/www/blog/app/Controller/PreMembersController.php(58): CakeEmail->send()
+#3 [internal function]: PreMembersController->index()
+#4 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#7 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2018-10-17 19:09:05 Error: Fatal Error (4): syntax error, unexpected '/' in [/var/www/blog/app/Controller/PreMembersController.php, line 56]
+2018-10-17 19:09:05 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 56, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 56, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 19:31:05 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 59]
+2018-10-17 19:31:05 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /users/add/3/8d3e7137e2af9af6dbfa51e241660006
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 59, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 59, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-17 19:34:39 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 59]
+2018-10-17 19:34:39 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /users/add/3/8d3e7137e2af9af6dbfa51e241660006
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 59, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 59, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
