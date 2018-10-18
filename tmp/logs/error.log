@@ -6002,3 +6002,216 @@ Stack Trace:
 #3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-10-18 10:40:43 Error: [NotFoundException] Invalid user
+Request URL: /users/delete/15
+Stack Trace:
+#0 [internal function]: UsersController->delete('15')
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-10-18 11:50:22 Error: Fatal Error (4): syntax error, unexpected '$hash' (T_VARIABLE) in [/var/www/blog/app/Controller/PreMembersController.php, line 40]
+2018-10-18 11:50:22 Error: [FatalErrorException] syntax error, unexpected '$hash' (T_VARIABLE)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 11:50:43 Error: Fatal Error (4): syntax error, unexpected '$hash' (T_VARIABLE) in [/var/www/blog/app/Controller/PreMembersController.php, line 40]
+2018-10-18 11:50:43 Error: [FatalErrorException] syntax error, unexpected '$hash' (T_VARIABLE)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 11:50:48 Error: Fatal Error (4): syntax error, unexpected '$hash' (T_VARIABLE) in [/var/www/blog/app/Controller/PreMembersController.php, line 40]
+2018-10-18 11:50:48 Error: [FatalErrorException] syntax error, unexpected '$hash' (T_VARIABLE)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 14:22:33 Error: Fatal Error (1): Call to a member function set() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 60]
+2018-10-18 14:22:33 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /users/add/2/172759e325edec1f82c01fb1e285dc6c
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 60, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 60, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 14:22:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /users/add/2/172759e325edec1f82c01fb1e285dc6c
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1119): DboSource->execute('INSERT INTO `bl...')
+#3 /var/www/blog/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /var/www/blog/app/Controller/UsersController.php(59): Model->save(Array)
+#6 [internal function]: UsersController->add('2', '172759e325edec1...')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-10-18 14:24:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /users/add/2/172759e325edec1f82c01fb1e285dc6c
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1119): DboSource->execute('INSERT INTO `bl...')
+#3 /var/www/blog/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /var/www/blog/app/Controller/UsersController.php(59): Model->save(Array)
+#6 [internal function]: UsersController->add('2', '172759e325edec1...')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-10-18 14:26:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /users/add/2/172759e325edec1f82c01fb1e285dc6c
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1119): DboSource->execute('INSERT INTO `bl...')
+#3 /var/www/blog/lib/Cake/Model/Model.php(1942): DboSource->create(Object(User), Array, Array)
+#4 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /var/www/blog/app/Controller/UsersController.php(59): Model->save(Array)
+#6 [internal function]: UsersController->add('2', '172759e325edec1...')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-10-18 16:14:29 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 16:14:29 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 16:18:19 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 16:18:19 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 16:31:11 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 16:31:11 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 16:50:13 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 16:50:13 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 17:36:16 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 17:36:16 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 18:04:14 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-18 18:20:52 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-18 18:21:25 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-18 18:21:25 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 19:18:10 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-18 19:29:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 52]
+2018-10-18 19:29:46 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/add/22ed7054b63139c180acd74ccb4b9d9d/69d86920cd92cf9f1b9406fe583a6ac9
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 52, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 52, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-18 19:30:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/blog/app/Controller/UsersController.php, line 52]
+2018-10-18 19:30:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /users/add/22ed7054b63139c180acd74ccb4b9d9d/69d86920cd92cf9f1b9406fe583a6ac9
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 52, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 52, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

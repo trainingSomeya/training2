@@ -30,6 +30,7 @@ class PostsController extends AppController {
 		$this->Prg->commonProcess();
 		$this->paginate = array('conditions' => $this->Post->parseCriteria($this->passedArgs));
 		$this->set('posts', $this->Paginator->paginate());
+phpinfo();
 	}
 
 	/**

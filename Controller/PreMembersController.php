@@ -14,7 +14,7 @@ class PreMembersController extends AppController {
 	 *
 	 * @var array
 	 */
-	public $components = array('Paginator','Flash','Search.Prg','Auth');
+	public $components = array('Paginator','Flash','Search.Prg','Auth','Security');
 
 	/**
 	 * index method
@@ -24,37 +24,40 @@ class PreMembersController extends AppController {
 	public function index() {
 		if ($this->request->is('post')) {
 			$mail=$this->request->data['PreMember']['mail'];
-			if($check=$this->PreMember->find('all',array(
-				'fields'=>array('id'),
-				'conditions'=>array('mail'=>$mail)
-			))){
-				//var_dump($check);
-				//var_dump($check[0]['PreMember']['id']);
+			//すでにあるメールアドレスなら上書き
+			if($check=$this->PreMember->find('all',array('fields'=>array('id'), 'conditions'=>array('mail'=>$mail)))){
 				$this->request->data['PreMember']['id']=$check[0]['PreMember']['id'];
-				//var_dump($this->request->data);
 			}
 			$this->PreMember->create();
 			if( $this->PreMember->save( $this->request->data)){
-				$hash = $this->PreMember->getActivationHash(); //ハッシュ値
-				$this->PreMember->set('urltoken', $hash);
+				$urltoken = $this->PreMember->get_token();//urlトークンの作成
+				$this->PreMember->set('urltoken', $urltoken);
+				$id_hash = $this->PreMember->getActivationHash();//idのハッシュ化
+				$this->PreMember->set('id_hash', $id_hash);
 				$this->PreMember->save();
 				$controller = 'users';
-				$action = 'add'; 
+				$action = 'add';
+
 				// 本登録用URLの作成
 				$url =
 					DS . $controller .    
 					DS . $action .         
-					DS . $this->PreMember->id     .  //仮ユーザーのID
-					DS . $hash;
+					DS . $id_hash .
+					DS . $urltoken;
 				$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
 
 				//読み込む設定ファイルの変数名を指定
 				$email = new CakeEmail('gmail');
 				$email->from('someya.training@gmail.com');
 				$email->to($this->request->data['PreMember']['mail']);
-				$email->subject('Regarding the issue of url for registration');
+				$email->subject('登録用URLの送信について');
 				//メール送信する
-				$email->send('登録用のURLです。'."\n".$url); 
+				if($email->send('登録用のURLです。'."\n".$url)){
+				$this->Flash->success(__('I sent an e-mail. Please confirm.'));
+				}
+
+			}else{
+				$this->Flash->error(__('Failed to send mail. Please send again.'));
 			}
 		}
 		$this->render();

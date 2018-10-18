@@ -46,14 +46,19 @@ class UsersController extends AppController {
 	 *
 	 * @return void
 	 */
-	public function add($id=null,$urltoken=null) {
-		$premembers = $this->User->PreMember->findById($id);
+	public function add($id_hash=null,$urltoken=null) {
+
+		$premembers=$this->User->PreMember->find('first',array('conditions'=>array('id_hash'=>$id_hash)));
+		//var_dump($premembers);
+         
 		$this->set('premembers',$premembers);
 		//var_dump($premembers['PreMember']['urltoken']);
 		//var_dump($premembers);
+
 		if($urltoken==$premembers['PreMember']['urltoken']){	
 			if ($this->request->is('post')) {
 				$this->User->create();
+
 				if ($this->User->save($this->request->data)) {
 					$this->Flash->success(__('The user has been saved.'));
 					$this->User->PreMember->delete($id);
@@ -64,7 +69,7 @@ class UsersController extends AppController {
 			}
 		}else{
 			$this->Flash->error(__('Invalid url. please try again.'));
-			return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
+			//return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
 		}
 		$groups = $this->User->Group->find('list');
 		//var_dump($groups);
