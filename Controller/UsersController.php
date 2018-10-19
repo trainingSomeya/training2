@@ -46,30 +46,30 @@ class UsersController extends AppController {
 	 *
 	 * @return void
 	 */
-	public function add($id_hash=null,$urltoken=null) {
+	public function add($id_encrypt=null,$urltoken=null) {
 
-		$premembers=$this->User->PreMember->find('first',array('conditions'=>array('id_hash'=>$id_hash)));
+		$id =  $this->User->PreMember->id_decrypt($id_encrypt);
+		$premembers=$this->User->PreMember->find('first',array('conditions'=>array('id'=>$id)));
 		//var_dump($premembers);
-         
 		$this->set('premembers',$premembers);
 		//var_dump($premembers['PreMember']['urltoken']);
-		//var_dump($premembers);
-
+		//var_dump($urltoken);
+		
 		if($urltoken==$premembers['PreMember']['urltoken']){	
 			if ($this->request->is('post')) {
 				$this->User->create();
 
 				if ($this->User->save($this->request->data)) {
 					$this->Flash->success(__('The user has been saved.'));
-					$this->User->PreMember->delete($id);
-					return $this->redirect(array('controller'=>'users','action' => 'login'));
+					$this->User->PreMember->delete($premembers['PreMember']['id']);//一度使用したurlは削除
+					return $this->redirect(array('controller'=>'users','action' => 'login'));//login画面へ
 				} else {
 					$this->Flash->error(__('The user could not be saved. Please, try again.'));
 				}
 			}
 		}else{
 			$this->Flash->error(__('Invalid url. please try again.'));
-			//return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
+			return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
 		}
 		$groups = $this->User->Group->find('list');
 		//var_dump($groups);

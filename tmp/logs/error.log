@@ -6215,3 +6215,247 @@ Stack Trace:
 #3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-10-19 12:07:18 Error: [SecurityException] CSRF token expired
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 12:47:55 Error: Fatal Error (4): syntax error, unexpected '{', expecting '(' in [/var/www/blog/app/Model/PreMember.php, line 40]
+2018-10-19 12:47:55 Error: [FatalErrorException] syntax error, unexpected '{', expecting '('
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 40, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 12:48:27 Error: [SecurityException] CSRF token expired
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 12:49:21 Error: Fatal Error (1): Call to undefined function get_token() in [/var/www/blog/app/Model/PreMember.php, line 44]
+2018-10-19 12:49:21 Error: [FatalErrorException] Call to undefined function get_token()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/a...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/a...', 44, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/a...', 44, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 12:51:05 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 12:51:20 Error: Fatal Error (1): Call to undefined function get_token() in [/var/www/blog/app/Model/PreMember.php, line 51]
+2018-10-19 12:51:20 Error: [FatalErrorException] Call to undefined function get_token()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/a...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/a...', 51, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/a...', 51, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 12:52:52 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/var/www/blog/lib/Cake/Utility/Security.php, line 368]
+2018-10-19 12:52:52 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/l...', 368)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/l...', 368, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 13:29:06 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/blog/app/Controller/PreMembersController.php, line 37]
+2018-10-19 13:29:06 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 37, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 37, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 13:29:10 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/blog/app/Controller/PreMembersController.php, line 37]
+2018-10-19 13:29:10 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 37, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 37, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 14:21:02 Error: [SecurityException] CSRF token expired
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 14:22:43 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 14:24:00 Error: Fatal Error (4): syntax error, unexpected '$IdKey' (T_VARIABLE), expecting function (T_FUNCTION) in [/var/www/blog/app/Model/PreMember.php, line 7]
+2018-10-19 14:24:00 Error: [FatalErrorException] syntax error, unexpected '$IdKey' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 14:40:36 Error: Fatal Error (4): syntax error, unexpected '$IdKey' (T_VARIABLE), expecting function (T_FUNCTION) in [/var/www/blog/app/Model/PreMember.php, line 7]
+2018-10-19 14:40:36 Error: [FatalErrorException] syntax error, unexpected '$IdKey' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 14:41:50 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 14:54:10 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 15:10:52 Error: Fatal Error (4): syntax error, unexpected '$ID_KEY' (T_VARIABLE), expecting function (T_FUNCTION) in [/var/www/blog/app/Model/PreMember.php, line 7]
+2018-10-19 15:10:52 Error: [FatalErrorException] syntax error, unexpected '$ID_KEY' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 7, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 15:29:31 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 15:52:32 Error: [SecurityException] CSRF token mismatch
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Controller/Component/SecurityComponent.php(250): SecurityComponent->_validateCsrf(Object(PreMembersController))
+#1 [internal function]: SecurityComponent->startup(Object(PreMembersController))
+#2 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Controller/Controller.php(678): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/blog/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#8 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-10-19 16:07:16 Error: Fatal Error (4): syntax error, unexpected '>' in [/var/www/blog/app/Config/idkey.php, line 3]
+2018-10-19 16:07:16 Error: [FatalErrorException] syntax error, unexpected '>'
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 16:07:19 Error: Fatal Error (4): syntax error, unexpected '>' in [/var/www/blog/app/Config/idkey.php, line 3]
+2018-10-19 16:07:19 Error: [FatalErrorException] syntax error, unexpected '>'
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 16:07:21 Error: Fatal Error (4): syntax error, unexpected '>' in [/var/www/blog/app/Config/idkey.php, line 3]
+2018-10-19 16:07:21 Error: [FatalErrorException] syntax error, unexpected '>'
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 3, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-19 16:12:13 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/var/www/blog/app/Controller/UsersController.php, line 58]
+2018-10-19 16:12:13 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /users/add/49795a354a4a3246646b2f506e4777456b5141784c513d3d/ff75891de3a6e76284098eadb3629a40
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 58, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 58, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
