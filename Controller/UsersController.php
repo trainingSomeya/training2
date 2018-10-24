@@ -47,21 +47,21 @@ class UsersController extends AppController {
 	 * @return void
 	 */
 	public function add($id_encrypt=null,$urltoken=null) {
-
-		$id =  $this->User->PreMember->id_decrypt($id_encrypt);
+		//$id =  $this->User->PreMember->id_decrypt($id_encrypt);//暗号化の場合、復号
+		$id = $this->User->PreMember->find('first',array('fields'=>array('id'),'conditions'=>array('id_hash'=>$id_encrypt)))['PreMember']['id'];//ハッシュ化の場合、引数から検索
 		$premembers=$this->User->PreMember->find('first',array('conditions'=>array('id'=>$id)));
-		//var_dump($premembers);
-		$this->set('premembers',$premembers);
-		//var_dump($premembers['PreMember']['urltoken']);
-		//var_dump($urltoken);
-		
-		if($urltoken==$premembers['PreMember']['urltoken']){	
+		//idが存在しているか、flagが有効であるか、urltokenが有効かで判断
+		if($premembers && $premembers['PreMember']['flag'] != 1 && $urltoken==$premembers['PreMember']['urltoken']){
+			$this->set('premembers',$premembers);
+
 			if ($this->request->is('post')) {
 				$this->User->create();
 
 				if ($this->User->save($this->request->data)) {
 					$this->Flash->success(__('The user has been saved.'));
-					$this->User->PreMember->delete($premembers['PreMember']['id']);//一度使用したurlは削除
+					//$this->User->PreMember->delete($premembers['PreMember']['id']);//暗号化を使用している場合は一度使用したurlは削除
+
+					$this->User->PreMember->save(['id'=>$id ,'flag'=>1]);//ハッシュ化を使用している場合はflagを1に
 					return $this->redirect(array('controller'=>'users','action' => 'login'));//login画面へ
 				} else {
 					$this->Flash->error(__('The user could not be saved. Please, try again.'));
@@ -71,89 +71,90 @@ class UsersController extends AppController {
 			$this->Flash->error(__('Invalid url. please try again.'));
 			return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
 		}
-		$groups = $this->User->Group->find('list');
-		//var_dump($groups);
-		$this->set(compact('groups'));
-	}
+	
+	$groups = $this->User->Group->find('list');
+	//var_dump($groups);
+	$this->set(compact('groups'));
+}
 
-	/**
-	 * edit method
-	 *
-	 * @throws NotFoundException
-	 * @param string $id
-	 * @return void
-	 */
-	public function edit($id = null) {
-		if (!$this->User->exists($id)) {
-			throw new NotFoundException(__('Invalid user'));
-		}
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->User->save($this->request->data)) {
-				$this->Flash->success(__('The user has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Flash->error(__('The user could not be saved. Please, try again.'));
-			}
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+public function edit($id = null) {
+	if (!$this->User->exists($id)) {
+		throw new NotFoundException(__('Invalid user'));
+	}
+	if ($this->request->is(array('post', 'put'))) {
+		if ($this->User->save($this->request->data)) {
+			$this->Flash->success(__('The user has been saved.'));
+			return $this->redirect(array('action' => 'index'));
 		} else {
-			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-			$this->request->data = $this->User->find('first', $options);
+			$this->Flash->error(__('The user could not be saved. Please, try again.'));
 		}
-		$groups = $this->User->Group->find('list');
-		$this->set(compact('groups'));
+	} else {
+		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$this->request->data = $this->User->find('first', $options);
 	}
+	$groups = $this->User->Group->find('list');
+	$this->set(compact('groups'));
+}
 
-	/**
-	 * delete method
-	 *
-	 * @throws NotFoundException
-	 * @param string $id
-	 * @return void
-	 */
-	public function delete($id = null) {
-		$this->User->id = $id;
-		if (!$this->User->exists()) {
-			throw new NotFoundException(__('Invalid user'));
+/**
+ * delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+public function delete($id = null) {
+	$this->User->id = $id;
+	if (!$this->User->exists()) {
+		throw new NotFoundException(__('Invalid user'));
+	}
+	$this->request->allowMethod('post', 'delete');
+	if ($this->User->delete()) {
+		$this->Flash->success(__('The user has been deleted.'));
+	} else {
+		$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+	}
+	return $this->redirect(array('action' => 'index'));
+}
+
+public function search(){
+	$this->autoRender = false;
+	if($this->request->is('ajax')) {
+		$zipcode = "0.".$this->request->data('zipcode');
+		$options = array('conditions'=>array('zipcode'=>$zipcode));
+		if($result = $this->User->PostalCode->find('all',$options)){
+			return json_encode($result);
 		}
-		$this->request->allowMethod('post', 'delete');
-		if ($this->User->delete()) {
-			$this->Flash->success(__('The user has been deleted.'));
-		} else {
-			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+		return json_encode(null);
+	}
+}
+
+public function beforeFilter() {
+	parent::beforeFilter();
+	// ユーザー自身による登録とログアウトを許可する
+	$this->Auth->allow('add', 'logout');
+}
+
+public function login() {
+	if ($this->request->is('post')) {
+		if ($this->Auth->login()) {
+			return $this->redirect($this->Auth->redirect());
 		}
-		return $this->redirect(array('action' => 'index'));
+		$this->Session->setFlash(__('Your username or password was incorrect.'));
 	}
+}
 
-	public function search(){
-		$this->autoRender = false;
-		if($this->request->is('ajax')) {
-			$zipcode = "0.".$this->request->data('zipcode');
-			$options = array('conditions'=>array('zipcode'=>$zipcode));
-			if($result = $this->User->PostalCode->find('all',$options)){
-				return json_encode($result);
-			}
-			return json_encode(null);
-		}
-	}
-
-	public function beforeFilter() {
-		parent::beforeFilter();
-		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout');
-	}
-
-	public function login() {
-		if ($this->request->is('post')) {
-			if ($this->Auth->login()) {
-				return $this->redirect($this->Auth->redirect());
-			}
-			$this->Session->setFlash(__('Your username or password was incorrect.'));
-		}
-	}
-
-	public function logout() {
-		$this->Session->setFlash('Good-Bye');
-		$this->redirect($this->Auth->logout());
-	}
+public function logout() {
+	$this->Session->setFlash('Good-Bye');
+	$this->redirect($this->Auth->logout());
+}
 
 
 /* public function initDB() {

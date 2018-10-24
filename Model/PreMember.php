@@ -33,8 +33,18 @@ class PreMember extends AppModel {
 		if (!isset($this->id)) {
 			return false;
 		}
-		// idをハッシュ化
-		return Security::hash( $this->field('id'), 'sha256', true);
+		//idの値が単純なためHMAC方式を使用
+		$id_hash = hash_hmac ('sha256' , $this->field('id'), ID_KEY);
+		//衝突を避けるために同じハッシュ値にならないようにダブルハッシュする
+		while($check = $this->find('all',array('fields'=>array('id'),'conditions'=>array('id_hash'=>$id_hash)))){
+			//上書き登録かどうかを確認
+			if($this->field('id') != $check[0]['PreMember']['id']){
+				$id_hash = Security::hash( $id_hash, 'sha256', true);
+			}else{
+				break;
+			}
+		}
+		return $id_hash;
 	}
 
 	//32バイトのトークンを作成
