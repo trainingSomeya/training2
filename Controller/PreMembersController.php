@@ -48,17 +48,24 @@ class PreMembersController extends AppController {
 				// 本登録用URLの作成
 				$url =	DS . $controller;   
 				$url =	$url . DS . $action;         
-				//$url = 	$url . DS . $id_encrypt;//暗号化id
+				//$url = $url . DS . $id_encrypt;//暗号化id
 				$url =  $url . DS . $id_hash;
 				$url =	$url . DS . $urltoken;
 				$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
 
+				//テンプレートに送る変数
+				$ary_vars = array (
+					'url' => $url
+				);
 				//読み込む設定ファイルの変数名を指定
 				$email = new CakeEmail('gmail');
+				$email->template('my_template', 'my_layout');
+				$email->viewVars($ary_vars);
+				$email->emailFormat('text');
 				$email->from('someya.training@gmail.com');
 				$email->to($this->request->data['PreMember']['mail']);
 				$email->subject('登録用URLの送信について');
-				if($email->send('登録用のURLです。'."\n".$url)){
+				if($email->send()){
 				$this->Flash->success(__('I sent an e-mail. Please confirm.'));
 				}
 

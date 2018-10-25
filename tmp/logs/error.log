@@ -6590,3 +6590,51 @@ Stack Trace:
 #3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-10-25 11:22:51 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/blog/app/Controller/PreMembersController.php, line 58]
+2018-10-25 11:22:51 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 58, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 58, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-25 11:24:48 Error: [MissingLayoutException] Layout file "Layouts/Emails/text/my_layout.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts/Emails/text/my_layout.ctp',
+)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(514): View->_getLayoutFileName('my_layout')
+#1 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'my_layout')
+#2 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1720): View->render('my_template', 'my_layout')
+#3 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1572): CakeEmail->_renderTemplates('????????????URL...')
+#4 /var/www/blog/lib/Cake/Network/Email/CakeEmail.php(1181): CakeEmail->_render(Array)
+#5 /var/www/blog/app/Controller/PreMembersController.php(68): CakeEmail->send('????????????URL...')
+#6 [internal function]: PreMembersController->index()
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-10-25 16:56:22 Error: Fatal Error (1): Call to undefined function sem_get() in [/var/www/blog/app/Model/PreMember.php, line 38]
+2018-10-25 16:56:22 Error: [FatalErrorException] Call to undefined function sem_get()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/a...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/a...', 38, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/a...', 38, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-10-25 18:07:20 Error: Fatal Error (1): Call to undefined function sem_get() in [/var/www/blog/app/Model/PreMember.php, line 38]
+2018-10-25 18:07:20 Error: [FatalErrorException] Call to undefined function sem_get()
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/blog/a...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/blog/a...', 38, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/blog/a...', 38, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
