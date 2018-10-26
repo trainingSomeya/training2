@@ -40,10 +40,26 @@ class PreMembersController extends AppController {
 				//idの暗号化
 				//$id_encrypt = $this->PreMember->id_encrypt($this->PreMember->id);				
 				
-				//idのハッシュ化
-				$id_hash = $this->PreMember->getActivationHash();
-				$this->PreMember->set('id_hash', $id_hash);
-				$this->PreMember->save();
+			        //トランザクション処理
+				$this->PreMember->begin();
+				try{
+					$this->PreMember->Lock();
+
+					//idのハッシュ化
+					$id_hash = $this->PreMember->getActivationHash();
+					$this->PreMember->set('id_hash', $id_hash);
+					if(!$this->PreMember->save()){
+						$this->PreMember->UnLock();
+						throw new Exception("Error");
+					}
+
+					$this->PreMember->UnLock();
+				//sleep(30);
+					$this->PreMember->commit();
+				}catch(Exception $e){
+					var_dump("Error");
+					$this->PreMember->rollback();
+				}
 				
 				// 本登録用URLの作成
 				$url =	DS . $controller;   
@@ -53,7 +69,7 @@ class PreMembersController extends AppController {
 				$url =	$url . DS . $urltoken;
 				$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
 
-				//テンプレートに送る変数
+				//テンプレートの文章に代入する変数
 				$ary_vars = array (
 					'url' => $url
 				);

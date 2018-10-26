@@ -71,90 +71,89 @@ class UsersController extends AppController {
 			$this->Flash->error(__('Invalid url. please try again.'));
 			return $this->redirect(array('controller'=>'pre_members','action' => 'index'));
 		}
-	
-	$groups = $this->User->Group->find('list');
-	//var_dump($groups);
-	$this->set(compact('groups'));
-}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-public function edit($id = null) {
-	if (!$this->User->exists($id)) {
-		throw new NotFoundException(__('Invalid user'));
+		$groups = $this->User->Group->find('list');
+		$this->set(compact('groups'));
 	}
-	if ($this->request->is(array('post', 'put'))) {
-		if ($this->User->save($this->request->data)) {
-			$this->Flash->success(__('The user has been saved.'));
-			return $this->redirect(array('action' => 'index'));
+
+	/**
+	 * edit method
+	 *
+	 * @throws NotFoundException
+	 * @param string $id
+	 * @return void
+	 */
+	public function edit($id = null) {
+		if (!$this->User->exists($id)) {
+			throw new NotFoundException(__('Invalid user'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->User->save($this->request->data)) {
+				$this->Flash->success(__('The user has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Flash->error(__('The user could not be saved. Please, try again.'));
+			}
 		} else {
-			$this->Flash->error(__('The user could not be saved. Please, try again.'));
+			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+			$this->request->data = $this->User->find('first', $options);
 		}
-	} else {
-		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-		$this->request->data = $this->User->find('first', $options);
+		$groups = $this->User->Group->find('list');
+		$this->set(compact('groups'));
 	}
-	$groups = $this->User->Group->find('list');
-	$this->set(compact('groups'));
-}
 
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-public function delete($id = null) {
-	$this->User->id = $id;
-	if (!$this->User->exists()) {
-		throw new NotFoundException(__('Invalid user'));
-	}
-	$this->request->allowMethod('post', 'delete');
-	if ($this->User->delete()) {
-		$this->Flash->success(__('The user has been deleted.'));
-	} else {
-		$this->Flash->error(__('The user could not be deleted. Please, try again.'));
-	}
-	return $this->redirect(array('action' => 'index'));
-}
-
-public function search(){
-	$this->autoRender = false;
-	if($this->request->is('ajax')) {
-		$zipcode = "0.".$this->request->data('zipcode');
-		$options = array('conditions'=>array('zipcode'=>$zipcode));
-		if($result = $this->User->PostalCode->find('all',$options)){
-			return json_encode($result);
+	/**
+	 * delete method
+	 *
+	 * @throws NotFoundException
+	 * @param string $id
+	 * @return void
+	 */
+	public function delete($id = null) {
+		$this->User->id = $id;
+		if (!$this->User->exists()) {
+			throw new NotFoundException(__('Invalid user'));
 		}
-		return json_encode(null);
-	}
-}
-
-public function beforeFilter() {
-	parent::beforeFilter();
-	// ユーザー自身による登録とログアウトを許可する
-	$this->Auth->allow('add', 'logout');
-}
-
-public function login() {
-	if ($this->request->is('post')) {
-		if ($this->Auth->login()) {
-			return $this->redirect($this->Auth->redirect());
+		$this->request->allowMethod('post', 'delete');
+		if ($this->User->delete()) {
+			$this->Flash->success(__('The user has been deleted.'));
+		} else {
+			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
 		}
-		$this->Session->setFlash(__('Your username or password was incorrect.'));
+		return $this->redirect(array('action' => 'index'));
 	}
-}
 
-public function logout() {
-	$this->Session->setFlash('Good-Bye');
-	$this->redirect($this->Auth->logout());
-}
+	public function search(){
+		$this->autoRender = false;
+		if($this->request->is('ajax')) {
+			$zipcode = "0.".$this->request->data('zipcode');
+			$options = array('conditions'=>array('zipcode'=>$zipcode));
+			if($result = $this->User->PostalCode->find('all',$options)){
+				return json_encode($result);
+			}
+			return json_encode(null);
+		}
+	}
+
+	public function beforeFilter() {
+		parent::beforeFilter();
+		// ユーザー自身による登録とログアウトを許可する
+		$this->Auth->allow('add', 'logout');
+	}
+
+	public function login() {
+		if ($this->request->is('post')) {
+			if ($this->Auth->login()) {
+				return $this->redirect($this->Auth->redirect());
+			}
+			$this->Session->setFlash(__('Your username or password was incorrect.'));
+		}
+	}
+
+	public function logout() {
+		$this->Session->setFlash('Good-Bye');
+		$this->redirect($this->Auth->logout());
+	}
 
 
 /* public function initDB() {
