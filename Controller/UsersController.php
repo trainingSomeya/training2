@@ -48,9 +48,11 @@ class UsersController extends AppController {
 	 */
 	public function add($id_encrypt=null,$urltoken=null) {
 		//$id =  $this->User->PreMember->id_decrypt($id_encrypt);//暗号化の場合、復号
-		$id = $this->User->PreMember->find('first',array('fields'=>array('id'),'conditions'=>array('id_hash'=>$id_encrypt)))['PreMember']['id'];//ハッシュ化の場合、引数から検索
+
+		//ハッシュ化の場合、引数から検索
+		$id = $this->User->PreMember->find('first',array('fields'=>array('id'),'conditions'=>array('id_hash'=>$id_encrypt)))['PreMember']['id'];
 		$premembers=$this->User->PreMember->find('first',array('conditions'=>array('id'=>$id)));
-		//idが存在しているか、flagが有効であるか、urltokenが有効かで判断
+		//idが存在しているか、一度使われていないか、urlのトークンが有効かで判断
 		if($premembers && $premembers['PreMember']['flag'] != 1 && $urltoken==$premembers['PreMember']['urltoken']){
 			$this->set('premembers',$premembers);
 
@@ -59,9 +61,10 @@ class UsersController extends AppController {
 
 				if ($this->User->save($this->request->data)) {
 					$this->Flash->success(__('The user has been saved.'));
-					//$this->User->PreMember->delete($premembers['PreMember']['id']);//暗号化を使用している場合は一度使用したurlは削除
-
-					$this->User->PreMember->save(['id'=>$id ,'flag'=>1]);//ハッシュ化を使用している場合はflagを1に
+					//暗号化を使用している場合は一度使用したurlは削除
+					//$this->User->PreMember->delete($premembers['PreMember']['id']);
+					//ハッシュ化を使用している場合はflagを1に
+					$this->User->PreMember->save(['id'=>$id ,'flag'=>1]);
 					return $this->redirect(array('controller'=>'users','action' => 'login'));//login画面へ
 				} else {
 					$this->Flash->error(__('The user could not be saved. Please, try again.'));

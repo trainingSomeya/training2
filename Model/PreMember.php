@@ -83,10 +83,11 @@ class PreMember extends AppModel {
 	//テーブルロック
 	function Lock($type="WRITE"){
 		$db = ConnectionManager::getDataSource($this->useDbConfig);
-		$q = "LOCK TABLE {$this->useTable} {$type};";
-		return $this->query($q);
+		$q = "LOCK TABLE {$this->useTable} {$type}, {$this->useTable} AS {$this->name} {$type};";
+		return $db->query($q);
 	}
 	function UnLock(){
-		return $this->query("UNLOCK TABLES");
+		$db = ConnectionManager::getDataSource($this->useDbConfig);
+		return $db->query("UNLOCK TABLES");
 	}
 }

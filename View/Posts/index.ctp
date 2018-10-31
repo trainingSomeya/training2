@@ -119,7 +119,8 @@
 			<div class="box">
 				<div class="well">
 					<h3><?php echo __('About'); ?></h3>
-					<p><?php echo __('Bootstrapの練習のためのブログぺージ'); ?></p>
+					<p><?php echo __('Bootstrapの練習のためのブログぺージ');
+			     //echo $this->element('sql_dump') ?></p>
 				</div>
 			</div>
 		</div>

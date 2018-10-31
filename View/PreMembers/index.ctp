@@ -7,6 +7,8 @@
 			<?php
 		     echo $this->Form->input('mail',array('label'=>'Mail Address'));
 		     echo $this->Form->end('送信');
+
+		     //echo $this->element('sql_dump');
 		     ?>
 		</div>
 	</div>
