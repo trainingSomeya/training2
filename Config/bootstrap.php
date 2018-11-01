@@ -107,6 +107,8 @@ App::uses('CakeLog', 'Log');
 
 App::uses('CakeEmail', 'Network/Email');
 
+define('MAIL_LOG', 'mail_log');
+
 CakeLog::config('debug', array(
 	'engine' => 'File',
 	'types' => array('notice', 'info', 'debug'),
@@ -117,4 +119,10 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+CakeLog::config('mail_log', array(
+	'engine' => 'FileLog',
+	'types' =>array('mail_log'),
+	'file' => 'mail_log',
+));
+
 config('idkey');

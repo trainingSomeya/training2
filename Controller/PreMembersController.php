@@ -34,6 +34,7 @@ class PreMembersController extends AppController {
 			$this->PreMember->create();
 			try{
 				if( $this->PreMember->save( $this->request->data)){
+
 					$urltoken = $this->PreMember->get_token();//urlトークンの作成
 					$this->PreMember->set('urltoken', $urltoken);
 					$this->PreMember->save();
@@ -61,25 +62,33 @@ class PreMembersController extends AppController {
 					$url =	$url . DS . $urltoken;
 					$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
 
+					$tomail = $this->request->data['PreMember']['mail'];
+
+					exec("nohup php -c '' 'php/mail.php' '$tomail' '$url' > /dev/null &");
+					
+					$this->Flash->success(__('I sent an e-mail. Please confirm.'));
+					$this->PreMember->commit();
+
+					/*
 					//テンプレートの文章に代入する変数
 					$ary_vars = array (
 						'url' => $url
 					);
-					//読み込む設定ファイルの変数名を指定
 					$email = new CakeEmail('gmail');
 					$email->template('my_template', 'my_layout');
 					$email->viewVars($ary_vars);
 					$email->emailFormat('text');
 					$email->from('someya.training@gmail.com');
-					$email->to($this->request->data['PreMember']['mail']);
-					$email->subject('登録用URLの送信について');
+					$email->to($frommail);
+					$email->subject('登録用URLの送信について');	
+					
 					if($email->send()){
 						$this->Flash->success(__('I sent an e-mail. Please confirm.'));
 						$this->PreMember->commit();
 					}else{
 						throw new Exception();
 					}
-
+					 */
 				}else{
 					throw new Exception();
 				}

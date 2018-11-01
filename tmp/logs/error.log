@@ -6788,3 +6788,134 @@ Stack Trace:
 #3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-11-01 11:04:16 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/24/ was not found or not readable
+Request URL: /posts/image/31
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(180): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('31')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-11-01 13:08:59 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/59
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:09:01 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/59
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:28:36 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/59
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:29:10 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/32
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:29:20 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/25/ was not found or not readable
+Request URL: /posts/image/32
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(180): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('32')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-11-01 13:29:21 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/25/ was not found or not readable
+Request URL: /posts/image/32
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(180): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('32')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-11-01 13:29:25 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/24/ was not found or not readable
+Request URL: /posts/image/31
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(180): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('31')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-11-01 13:29:32 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/24/ was not found or not readable
+Request URL: /posts/image/31
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(180): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('31')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2018-11-01 13:29:50 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/56
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:29:53 Error: [MissingActionException] Action PostsController::image() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'image',
+)
+Request URL: /posts/image/56
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-11-01 13:35:01 Error: [NotFoundException] Invalid post
+Request URL: /posts/image/00
+Stack Trace:
+#0 [internal function]: PostsController->image('00')
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-11-01 14:09:06 Error: test
+2018-11-01 14:45:57 Error: test
+2018-11-01 14:50:35 Error: test
+2018-11-01 14:53:22 Error: test
+2018-11-01 15:00:03 Error: test
+2018-11-01 15:01:00 Error: test

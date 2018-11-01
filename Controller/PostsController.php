@@ -178,7 +178,7 @@ class PostsController extends AppController {
 
 		$this->response->type($mime_type);
 		$this->response->file($file_path);
-		//	echo $this->response; 
+	//		echo $this->response; 
 
 
 	}
