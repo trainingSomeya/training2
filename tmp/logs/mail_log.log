@@ -1,1 +1,16 @@
 2018-11-01 15:02:13 Mail_log: test
+2018-11-02 15:12:54 Mail_log: Hello.
+2018-11-02 15:16:58 Mail_log: Hello.
+2018-11-02 15:20:09 Mail_log: Hello.
+2018-11-02 15:30:28 Mail_log: test.
+2018-11-02 15:44:31 Mail_log: test.
+2018-11-02 15:46:05 Mail_log: 
+2018-11-02 15:46:41 Mail_log: 
+2018-11-02 15:47:13 Mail_log: someya.training@gmail.com
+2018-11-02 15:49:20 Mail_log: someya.training@gmail.com
+2018-11-02 15:52:49 Mail_log: send to someya.training@gmail.com
+2018-11-02 15:59:19 Mail_log: send to someya.training@gmail.com
+2018-11-02 16:03:10 Mail_log: send to someya.training@gmail.com,status: success
+2018-11-02 16:05:57 Mail_log: send to someya.training@gmail.com, status: success
+2018-11-02 16:08:41 Mail_log: send to someya.training@gmail.com, status: success
+2018-11-02 17:27:49 Mail_log: send to someya.training@gmail.com, status: success

@@ -1,0 +1,3 @@
+November 2, 2018, 12:25:40 PM : send to someya.training@gmail.com: success 
+November 2, 2018, 12:25:42 PM : send to someya.training@gmail.com: success 
+November 2, 2018, 12:25:44 PM : send to someya.training@gmail.com: success 

@@ -63,8 +63,12 @@ class PreMembersController extends AppController {
 					$url = Router::url( $url, true);  // ドメイン(+サブディレクトリ)を付与
 
 					$tomail = $this->request->data['PreMember']['mail'];
-
-					exec("nohup php -c '' 'php/mail.php' '$tomail' '$url' > /dev/null &");
+					
+					//非同期でのメールの送信(php)
+					//exec("nohup php -c '' 'php/mail.php' '$tomail' '$url' > /dev/null &");
+					
+					//非同期でのメールの送信(cakephp)
+					exec("/var/www/blog/app/Console/cake mail $tomail $url > /dev/null &");
 					
 					$this->Flash->success(__('I sent an e-mail. Please confirm.'));
 					$this->PreMember->commit();
@@ -79,7 +83,7 @@ class PreMembersController extends AppController {
 					$email->viewVars($ary_vars);
 					$email->emailFormat('text');
 					$email->from('someya.training@gmail.com');
-					$email->to($frommail);
+					$email->to($tomail);
 					$email->subject('登録用URLの送信について');	
 					
 					if($email->send()){
