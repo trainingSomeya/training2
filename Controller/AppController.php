@@ -47,6 +47,7 @@ class AppController extends Controller {
 	public $helpers = array('Html', 'Form', 'Session');
 	
 	public function beforeFilter() {
+		$this->set('auth',$this->Auth->user());
 		$this->Auth->allow('display');
 		// AuthComponent の設定
 		$this->Auth->loginAction = array(

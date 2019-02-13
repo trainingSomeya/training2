@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'nKwGZzgC',
+		'password' => 'password',
 		'database' => 'blogtest',
 		'prefix' => '',
 		'encoding' => 'utf8',
@@ -85,6 +85,6 @@ class DATABASE_CONFIG {
 		'password' => 'password',
 		'database' => 'test_database_name',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 }

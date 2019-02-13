@@ -6919,3 +6919,749 @@ Stack Trace:
 2018-11-01 14:53:22 Error: test
 2018-11-01 15:00:03 Error: test
 2018-11-01 15:01:00 Error: test
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:12:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:13:51 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:13:51 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:55:32 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /Post/image/hoge.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-11-07 13:55:44 Error: [MissingControllerException] Controller class PiccoloController could not be found.
+Exception Attributes: array (
+  'class' => 'PiccoloController',
+  'plugin' => NULL,
+)
+Request URL: /Piccolo
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:35 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:35 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:46 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:46 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:47 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:31:47 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:36:22 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-01-30 19:36:22 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-06 11:47:26 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-06 11:47:26 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-06 11:47:26 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-06 11:47:26 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:06:11 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:06:11 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:33:15 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(167): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:33:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:33:21 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(167): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:33:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:49:30 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(10): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/app/Controller/PreMembersController.php(108): Controller->render()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-13 15:49:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:49:50 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:49:50 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:49:50 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:49:50 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:51:51 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:51:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:51:53 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:51:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:51:57 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/app/Controller/PreMembersController.php(108): Controller->render()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-13 15:51:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:52:00 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:52:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:52:01 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:52:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:52:20 Error: [MissingHelperException] Helper class userHelper could not be found.
+Exception Attributes: array (
+  'class' => 'userHelper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('user')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('user')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('user')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 15:52:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:58:00 Error: [MissingHelperException] Helper class _ViewHelper could not be found.
+Exception Attributes: array (
+  'class' => '_ViewHelper',
+  'plugin' => false,
+)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('_View')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('_View')
+#2 /var/www/blog/app/View/Layouts/default.ctp(189): View->__get('_View')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/app/Controller/PreMembersController.php(108): Controller->render()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-13 15:58:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 15:58:13 Error: [MissingHelperException] Helper class ViewHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ViewHelper',
+  'plugin' => false,
+)
+Request URL: /pre_members
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('View')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('View')
+#2 /var/www/blog/app/View/Layouts/default.ctp(189): View->__get('View')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/app/Controller/PreMembersController.php(108): Controller->render()
+#9 [internal function]: PreMembersController->index()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PreMembersController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PreMembersController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-13 15:58:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 16:00:58 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 16:00:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 16:00:59 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('Auth')
+#2 /var/www/blog/app/View/Layouts/default.ctp(188): View->__get('Auth')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(546): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-13 16:00:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 16:23:36 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [/var/www/blog/app/View/Layouts/default.ctp, line 178]
+2019-02-13 16:23:36 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /users
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 178)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 178, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 178, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-13 17:26:37 Error: Model Image, Field filename: Unable to move the uploaded file to /var/www/blog/app/image/files/image/filename/53/26.bmp
+2019-02-13 17:26:37 Error: [UploadException] Unable to upload file
+Request URL: /posts/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Image), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2352): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2572): Model->saveMany(Array, Array)
+#8 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#9 /var/www/blog/app/Controller/PostsController.php(87): Model->saveAll(Array)
+#10 [internal function]: PostsController->add()
+#11 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#14 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2019-02-13 17:35:36 Error: [PDOException] SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+Request URL: /users/edit/1
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(User), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('count', Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(3449): Model->find('count', Array)
+#7 [internal function]: Model->isUnique(Array, Array)
+#8 /var/www/blog/lib/Cake/Model/Validator/CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 /var/www/blog/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('username', Array, Array)
+#10 /var/www/blog/lib/Cake/Model/ModelValidator.php(268): CakeValidationSet->validate(Array, true)
+#11 /var/www/blog/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#12 /var/www/blog/lib/Cake/Model/Model.php(3489): ModelValidator->validates(Array)
+#13 /var/www/blog/lib/Cake/Model/Model.php(1838): Model->validates(Array)
+#14 /var/www/blog/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#15 /var/www/blog/app/Controller/UsersController.php(94): Model->save(Array)
+#16 [internal function]: UsersController->edit('1')
+#17 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#18 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#19 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#20 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2019-02-13 18:36:33 Error: [MissingControllerException] Controller class Phpinfo.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Phpinfo.phpController',
+  'plugin' => NULL,
+)
+Request URL: /phpinfo.php
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 18:36:55 Error: [MissingControllerException] Controller class Phpinfo.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Phpinfo.phpController',
+  'plugin' => NULL,
+)
+Request URL: /phpinfo.php
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-13 18:36:55 Error: [MissingControllerException] Controller class Phpinfo.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Phpinfo.phpController',
+  'plugin' => NULL,
+)
+Request URL: /phpinfo.php
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

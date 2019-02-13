@@ -174,6 +174,9 @@ font-size: 18px
 					<span class="icon-bar"></span>
 				</button>
 			</div>
+					<?php 
+					if($auth){echo 'ようこそ,'.$auth['username'];}
+					else{echo '未ログイン';}?>
 			<div class="collapse navbar-collapse" id="navbarAction">
 				<ul class="nav navbar-nav">
 					<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?></li>
