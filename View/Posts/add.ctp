@@ -8,7 +8,10 @@
 				<?php echo $this->Form->input('user_id',array('type'=>'select','options'=>$users)); ?>
 				<?php echo $this->Form->input('title');?> 
 				<?php echo $this->Form->input('body');?> 
-				<?php echo $this->Form->input('Image.0.filename', array('type' => 'file'));?> 
+				<?php echo $this->Form->input('Image..filename', array('type' => 'file', 'accept'=>'image/*'));?> 
+				<?php echo $this->Form->input('Image..filename', array('type' => 'file', 'accept'=>'image/*'));?> 
+				<?php echo $this->Form->input('Image..filename', array('type' => 'file', 'accept'=>'image/*'));?> 
+				<?php echo $this->Form->input('Image..filename', array('type' => 'file', 'accept'=>'image/*'));?> 
 				<?php echo $this->Form->input('Tag',array('type'=>'select','options'=>$tags,'multiple' => 'checkbox','size' => 5,'class'=>'checkbox')); ?>
 				<div class="form-group">
 				<?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary btn-lg')); ?>

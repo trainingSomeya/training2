@@ -160,27 +160,27 @@ class UsersController extends AppController {
 
 
 /* public function initDB() {
-    $group = $this->User->Group;
-    //管理者グループには全てを許可する
-    $group->id = 1;
-    $this->Acl->allow($group, 'controllers');
+	$group = $this->User->Group;
+	//管理者グループには全てを許可する
+	$group->id = 1;
+	$this->Acl->allow($group, 'controllers');
 
-    //マネージャグループには posts と widgets に対するアクセスを許可する
-    $group->id = 2;
-    $this->Acl->deny($group, 'controllers');
-    $this->Acl->allow($group, 'controllers/Posts');
-    $this->Acl->allow($group, 'controllers/Widgets');
+	//マネージャグループには posts と widgets に対するアクセスを許可する
+	$group->id = 2;
+	$this->Acl->deny($group, 'controllers');
+	$this->Acl->allow($group, 'controllers/Posts');
+	$this->Acl->allow($group, 'controllers/Widgets');
 
-    //ユーザグループには posts と widgets に対する追加と編集を許可する
-    $group->id = 3;
-    $this->Acl->deny($group, 'controllers');
-    $this->Acl->allow($group, 'controllers/Posts/add');
-    $this->Acl->allow($group, 'controllers/Posts/edit');
-    $this->Acl->allow($group, 'controllers/Widgets/add');
-    $this->Acl->allow($group, 'controllers/Widgets/edit');
-    //馬鹿げた「ビューが見つからない」というエラーメッセージを表示させないために exit を追加します
-    echo "all done";
-    exit;
+	//ユーザグループには posts と widgets に対する追加と編集を許可する
+	$group->id = 3;
+	$this->Acl->deny($group, 'controllers');
+	$this->Acl->allow($group, 'controllers/Posts/add');
+	$this->Acl->allow($group, 'controllers/Posts/edit');
+	$this->Acl->allow($group, 'controllers/Widgets/add');
+	$this->Acl->allow($group, 'controllers/Widgets/edit');
+	//馬鹿げた「ビューが見つからない」というエラーメッセージを表示させないために exit を追加します
+	echo "all done";
+	exit;
 } */
 
 }

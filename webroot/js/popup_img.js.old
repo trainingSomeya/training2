@@ -1,0 +1,125 @@
+$(document).ready(function(){
+	var size = $(".img").length;
+	/* 画像を押す */
+	$('.img').on('click',function()
+		{
+			//押した画像の情報を取得
+			var img = new Image();
+			img.src = $(this).children('img').attr('src');
+			img_width = $(this).children('img').width();          // 幅
+			img_height = $(this).children('img').height();        // 高さ
+			img_ratio = img_height/img_width;   // 画像の幅高比	
+			//ウィンドウサイズに合わせて表示
+			var w;  var h;      // 幅、高さ
+			const margin=200;    // 上下左右の最低マージン
+
+			if(img_ratio > 1){
+				h = $(window).height()-margin;
+				w = h/img_ratio;
+			}else{
+				w = $(window).width()-margin;
+				h = w*img_ratio;
+			}
+
+			$(this).find('.largeImg').children('img').width(w);
+			$(this).find('.largeImg').children('img').height(h);
+
+			var	index = $(this).index('.img');
+			idname = index;
+			$('#back-curtain')
+				.css({
+					'position':'fixed',
+					'width' : $(window).width(),
+					'height' : $(window).height()
+				})
+				.show();
+			$('.largeImg',this)
+				.css({
+					'position': 'absolute',
+					'left': Math.floor(($(window).width()-w)/2) +'px',
+					'top': $(window).scrollTop() + 120 + 'px',
+				})
+				.show();
+			$('#buttonR')
+				.css({
+					'position': 'absolute',
+					'left': Math.floor(($(window).width() + 300) / 2) +'px',
+					'top': $(window).scrollTop() + 320 + 'px'
+				})
+				.show();
+			$('#buttonL')
+				.css({
+					'position': 'absolute',
+					'left': Math.floor(($(window).width() - 750) / 2) +'px',
+					'top': $(window).scrollTop() + 320 + 'px'
+				})
+				.show();
+
+		});
+	/* スライドショーの操作 */
+	$('#buttonR').on('click',function()
+		{
+			if(idname<size-1){	
+				$('.largeImg').eq(idname).fadeOut('slow', function(){
+					$('.largeImg').eq(++idname)
+						.css({
+							'position': 'absolute',
+							'left': Math.floor(($(window).width() - 800) / 2) +'px',
+							'top': $(window).scrollTop() + 120 + 'px'
+						})
+						.fadeIn('slow');
+				});
+			}
+		});
+
+
+	$('#buttonL').on('click',function()
+		{
+			if(idname>0){
+				$('.largeImg').eq(idname).fadeOut('slow', function(){
+					$('.largeImg').eq(--idname)
+						.css({
+							'position': 'absolute',
+							'left': Math.floor(($(window).width() - 800) / 2) +'px',
+							'top': $(window).scrollTop() + 120 + 'px'
+						})
+						.fadeIn('slow');
+
+				});
+			}
+		});
+	/* スライドショーの終了 */
+	$('.largeImg, #back-curtain').on('click',function()
+		{
+			$('.largeImg').fadeOut('slow', function() { $('#back-curtain, #buttonR, #buttonL').hide();});
+		});
+
+	/*  画面のリサイズに合わせる */
+	$(window).resize(function(){
+		$('#back-curtain')
+			.css({
+				'width' : $(window).width(),
+				'height' : $(window).height()
+			});
+		$('.largeImg')
+			.css({
+				'position': 'absolute',
+				'left': Math.floor(($(window).width() - 800) / 2) +'px',
+				'top': $(window).scrollTop() + 120 + 'px'
+			});
+		$('#buttonR')
+			.css({
+				'position': 'absolute',
+				'left': Math.floor(($(window).width() + 300) / 2) +'px',
+				'top': $(window).scrollTop() + 320 + 'px'
+			});
+		$('#buttonL')
+			.css({
+				'position': 'absolute',
+				'left': Math.floor(($(window).width() - 750) / 2) +'px',
+				'top': $(window).scrollTop() + 320 + 'px'
+			});
+
+	});
+
+});

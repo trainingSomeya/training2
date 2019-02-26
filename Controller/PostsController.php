@@ -22,6 +22,7 @@ class PostsController extends AppController {
 	 * @return void
 	 */
 	public function index() {
+		$this->layout = 'post';
 		//categoriesテーブルから種別テーブルリストを取得する
 		$this->set('list',$this->Post->Category->find('list',array('fields'=>array('categoryname','categoryname'))));
 		//tagsテーブルから種別テーブルリストを取得する
@@ -48,6 +49,9 @@ class PostsController extends AppController {
 		// ログインユーザーの情報を取得
 		$user = $this->Auth->user();
 		$this->set('user', $user);
+
+		$this->set('image_num', $this->Post->Image->find('count', array('conditions' => array('Image.post_id' => $this->Post->find('first', $options)['Post']['id']))));
+
 		//var_dump($user);
 		//
 		//	var_dump($this->Post->find('first', $options));
@@ -62,7 +66,7 @@ class PostsController extends AppController {
 			throw new NotFoundException();
 		}
 		return new CakeResponse(array('type' => 'image/png', 'body' => readfile($image)));*/
-		
+
 		/* $post = $this->Post->find('first', $options);
 
 		$this->autoRender = false;
@@ -84,6 +88,12 @@ class PostsController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Post->create();
+			$img_num = count($this->request->data['Image']);
+			for($i=0;$i<=$img_num;$i++){
+				if($this->request->data['Image'][$i]['filename']['error']!=0){
+					unset($this->request->data['Image'][$i]);
+				}
+			}
 			if ($this->Post->saveall($this->request->data)) {
 				$this->request->data['Post']['user_id'] = $this->Auth->user('id');
 		/*	 ob_start();//チェック
@@ -120,7 +130,14 @@ class PostsController extends AppController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Post->save($this->request->data)) {
+			$this->Post->id = $id;
+			$img_num = count($this->request->data['Image']);
+			for($i=0;$i<=$img_num;$i++){
+				if($this->request->data['Image'][$i]['filename']['error']!=0){
+					unset($this->request->data['Image'][$i]);
+				}
+			}
+			if ($this->Post->saveall($this->request->data)) {
 				$this->Flash->success(__('The post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -130,8 +147,19 @@ class PostsController extends AppController {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 			$this->request->data = $this->Post->find('first', $options);
 		}
+
+		// ログインユーザーの情報を取得
+		$user = $this->Auth->user();
+		$this->set('user', $user);
+
+		$this->set('image_num', $this->Post->Image->find('count', array('conditions' => array('Image.post_id' => $this->Post->find('first', $options)['Post']['id']))));
+		$this->set('post', $this->Post->find('first', $options));
 		$users = $this->Post->User->find('list');
 		$this->set(compact('users'));
+		$categories = $this->Post->Category->find('list',array('fields'=>array('id','categoryname')));
+		$this->set(compact('categories'));
+		$tags = $this->Post->Tag->find('list',array('fields'=>array('id','tagname')));
+		$this->set(compact('tags'));
 	}
 
 	/**
@@ -160,10 +188,10 @@ class PostsController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view');
+		$this->Auth->allow('index', 'view','img_delete');
 	}	
 
-	public function image($id = null) {
+	public function image($id = null, $num = 0) {
 		if (!$this->Post->exists($id)) {
 			throw new NotFoundException(__('Invalid post'));
 		}
@@ -174,12 +202,29 @@ class PostsController extends AppController {
 		$this->autoRender = false;
 
 		$mime_type = "image/png";
-		$file_path = "image/files/image/filename/".$post['Image'][0]['id'].'/'.$post['Image'][0]['filename'];
+		$file_path = "image/files/image/filename/".$post['Image'][$num]['id'].'/'.$post['Image'][$num]['filename'];
 
 		$this->response->type($mime_type);
 		$this->response->file($file_path);
-	//		echo $this->response; 
+		//		echo $this->response;
+	}
 
-
+	public function img_delete(){
+		$this->autoRender = false;
+        if($this->request->is('ajax')) {
+			$num = $this->request->data('delete_img_num');
+			$post_id = $this->request->data('delete_post_id');
+			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $post_id));
+			$post = $this->Post->find('first', $options);
+			$img_options = array('conditions' => array($this->Post->primaryKey => $post['Image'][$num]['id']));
+			$result = $this->Post->Image->find('first',$options);
+			if($this->Post->Image->delete($post['Image'][$num]['id'])){
+				return json_encode($post['Image'][$num]['filename']);
+			}
+			return json_encode(null);
+        }
 	}
 }
+
+
+

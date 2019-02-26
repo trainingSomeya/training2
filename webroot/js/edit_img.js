@@ -1,0 +1,35 @@
+$(function () {
+	/* 画像を押す */
+	$('.img').click(function(){
+		var	index = $(this).index('.img');
+		//alert(JSON.stringify($(this).children('img').attr('src')));
+		//alert($(this).children('img').attr('src'));
+		array = $(this).children('img').attr('src').split('/');
+		//alert(array);
+		//削除した要素を消す
+		$('.img').eq(index).remove();
+		//入力値をセット
+		var param = {delete_post_id: array[3],delete_img_num: index};
+		//var param = {delete_post_id:'4444'};
+		alert(JSON.stringify(param));
+		var send_url = "/posts/img_delete";
+		$.ajax({
+			type: "post",
+			data: param,
+			url: send_url,
+			dataType: "json",
+			success: function (res) {
+				if(res!==null){
+					alert(JSON.stringify(res)+'を削除しました。');
+				}else{
+					alert("not exist");
+				}
+			},
+			error: function (res, status, errors) {
+				alert(res + ', ' + status + ', ' + errors);
+				alert(JSON.stringify(res));
+			}
+		});
+		return false;
+	});
+});

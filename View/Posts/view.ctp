@@ -1,3 +1,5 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/popup_img.js"></script>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12" id="title">
@@ -9,6 +11,7 @@
 		</div>
 	</div>
 	<div class="posts view">
+		<div id="back-curtain"></div>
 		<dl>
 			<dt><?php echo __('Id'); ?></dt>
 			<dd>
@@ -42,17 +45,31 @@
 			</dd>
 			<dt><?php echo __('Image'); ?></dt>
 			<dd>
-<?php
-if($user['id'] == $post['User']['id']){
-	$file_path = "/posts/image/".$post['Post']['id'];
-	echo $this->Html->image($file_path);
-}else {
-	echo '画像を上げたユーザーのみが閲覧可能です';
-} 	
-?>&nbsp;
+			<?php
+		 if($user['id'] == $post['User']['id']){
+		 for($i=0;$i<$image_num;$i++){
+		 $file_path = "/posts/image/".$post['Post']['id']."/".$i;
+		 ?>
+		 <div class="img">
+			 <?php echo $this->Html->image($file_path);?>
+			 <div class="largeImg">
+				 <?php echo $this->Html->image($file_path); ?>
+			 </div>
+		 </div>
+		 <?php
+				  }
+				  }else {
+				  echo '画像を上げたユーザーのみが閲覧可能です';
+				  } 	
+				  ?>&nbsp;
 			</dd>
-
-
 		</dl>
+		<div id="buttonR">
+			<button type="button">></button>
+		</div>
+		<div id="buttonL">
+			<button type="button"><</button>
+		</div>
+
 	</div>
 </div>
