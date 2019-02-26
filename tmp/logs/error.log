@@ -35156,3 +35156,13 @@ Stack Trace:
 #4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2019-02-26 17:22:30 Error: [NotFoundException] The requested file /var/www/blog/app/image/files/image/filename/77/ was not found or not readable
+Request URL: /posts/image/32/0
+Stack Trace:
+#0 /var/www/blog/app/Controller/PostsController.php(208): CakeResponse->file('image/files/ima...')
+#1 [internal function]: PostsController->image('32', '0')
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

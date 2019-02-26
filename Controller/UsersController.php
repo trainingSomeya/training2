@@ -141,7 +141,7 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout');
+		$this->Auth->allow('add', 'logout','search');
 	}
 
 	public function login() {

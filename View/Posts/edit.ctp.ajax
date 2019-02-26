@@ -16,7 +16,7 @@
 					 ?>
 					 <div class="img">
 						 <?php echo $this->Html->image($file_path);?>
-						 <input type="button" class="delete_btn" value="削除">
+						 <!-- <input type="button" id="delete_btn" value="削除"> -->
 					 </div>
 					 <?php
 							  }
