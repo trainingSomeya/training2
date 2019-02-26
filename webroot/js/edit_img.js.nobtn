@@ -1,13 +1,13 @@
 $(function () {
 	/* 画像を押す */
-	$('.delete_btn').click(function(){
-		var	index = $(this).closest('div').index('.img');
-		//alert(JSON.stringify($(this).closest('div').children('img').attr('src')));
-		//alert($(this).closest('div').children('img').attr('src'));
-		array = $(this).closest('div').children('img').attr('src').split('/');
+	$('.img').click(function(){
+		var	index = $(this).index('.img');
+		//alert(JSON.stringify($(this).children('img').attr('src')));
+		//alert($(this).children('img').attr('src'));
+		array = $(this).children('img').attr('src').split('/');
 		//alert(array);
 		//削除した要素を消す
-		$('.delete_btn').closest('div').eq(index).remove();
+		$('.img').eq(index).remove();
 		//入力値をセット
 		var param = {delete_post_id: array[3],delete_img_num: index};
 		//alert(JSON.stringify(param));
