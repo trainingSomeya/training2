@@ -98,7 +98,7 @@ class Post extends AppModel {
 	}
 	//論理削除のため、findの前にフラグが立っているものを検索対象から除外
 	public function beforeFind($queryData){
-		$queryData['conditions']['delete_flag'] = false;
+		$queryData['conditions']['Post.delete_flag'] = false;
 		return $queryData;
 	}
 }

@@ -26,7 +26,7 @@ class PreMembersController extends AppController {
 			$mail=$this->request->data['PreMember']['mail'];
 			//すでにあるメールアドレスなら上書き
 			if($check=$this->PreMember->find('first',array('fields'=>array('id'), 'conditions'=>array('mail'=>$mail)))){
-				$this->request->data['PreMember']['id']=$check[0]['PreMember']['id'];
+				$this->request->data['PreMember']['id']=$check['PreMember']['id'];
 				$this->request->data['PreMember']['flag']=0;//fragをリセット
 			}
 

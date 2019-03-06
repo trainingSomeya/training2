@@ -22,7 +22,7 @@ class User extends AppModel {
 			'notBlank' => array(
 				'rule' => array('notBlank'),
 			),
-			'emailExists' => array( 'rule' => 'isUnique', 'message' => '既に登録されています'),
+			'emailExists' => array( 'rule' => array('isUnique',array('username','delete_flag'), false), 'message' => '既に登録されています'),
 		),
 		'password' => array(
 			'notBlank' => array(
@@ -114,5 +114,11 @@ class User extends AppModel {
 
 	public function bindNode($user) {
 		return array('model' => 'Group', 'foreign_key' => $user['User']['group_id']);
+	}
+
+	//論理削除のため、findの前にフラグが立っているものを検索対象から除外
+	public function beforeFind($queryData){
+		$queryData['conditions']['delete_flag'] = false;
+		return $queryData;
 	}
 }

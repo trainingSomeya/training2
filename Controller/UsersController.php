@@ -14,7 +14,14 @@ class UsersController extends AppController {
 	 *
 	 * @var array
 	 */
-	public $components = array('Paginator','Flash','Search.Prg','Auth');
+	public $components = array('Paginator','Flash','Search.Prg','Auth' => array(
+		'authenticate' => array(
+			'Form' => array( 
+				// 認証されるには、Userのdelete_flagが0
+				'scope' => array( 'User.delete_flag' => 0)
+			)
+		)
+	),);
 
 	/**
 	 * index method
@@ -118,11 +125,18 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->User->delete()) {
-			$this->Flash->success(__('The user has been deleted.'));
-		} else {
-			$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+		
+		//論理削除
+		if($this->request->is('delete')||$this->request->is('post')){
+			$data = array('id' => $id,'delete_flag' => true);
+			$this->User->save($data);
 		}
+		//物理削除
+		//if ($this->User->delete()) {
+		//	$this->Flash->success(__('The user has been deleted.'));
+		//} else {
+		//	$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+		//}
 		return $this->redirect(array('action' => 'index'));
 	}
 

@@ -226,14 +226,14 @@ class PostsController extends AppController {
 			$num = $this->request->data('delete_img_num');
 			$post_id = $this->request->data('delete_post_id');
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $post_id));
-			$post = $this->Post->find('first', $options);
-			$img_options = array('conditions' => array($this->Post->primaryKey => $post['Image'][$num]['id']));
-			$result = $this->Post->Image->find('first',$options);
+			//$post = $this->Post->find('first', $options);
+			//$img_options = array('conditions' => array('Image.post_id' => $post_id));
+			$result = $this->Post->Image->find('all',$options);
 
 			//論理削除
-			$data = array('id' => $post['Image'][$num]['id'],'delete_flag' => true);
+			$data = array('id' => $result[$num]['Image']['id'],'delete_flag' => true);
 			if($this->Post->Image->save($data)){
-				return json_encode($post['Image'][$num]['filename']);
+				return json_encode($result[$num]['Image']['filename']);
 			}
 			//物理削除
 			#	if($this->Post->Image->delete($post['Image'][$num]['id'])){
