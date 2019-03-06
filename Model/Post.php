@@ -96,4 +96,9 @@ class Post extends AppModel {
 	public function isOwnedBy($post, $user) {
 		return $this->field('id', array('id' => $post, 'user_id' => $user)) !== false;
 	}
+	//論理削除のため、findの前にフラグが立っているものを検索対象から除外
+	public function beforeFind($queryData){
+		$queryData['conditions']['delete_flag'] = false;
+		return $queryData;
+	}
 }

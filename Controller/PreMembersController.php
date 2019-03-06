@@ -25,7 +25,7 @@ class PreMembersController extends AppController {
 		if ($this->request->is('post')) {
 			$mail=$this->request->data['PreMember']['mail'];
 			//すでにあるメールアドレスなら上書き
-			if($check=$this->PreMember->find('all',array('fields'=>array('id'), 'conditions'=>array('mail'=>$mail)))){
+			if($check=$this->PreMember->find('first',array('fields'=>array('id'), 'conditions'=>array('mail'=>$mail)))){
 				$this->request->data['PreMember']['id']=$check[0]['PreMember']['id'];
 				$this->request->data['PreMember']['flag']=0;//fragをリセット
 			}
@@ -110,7 +110,7 @@ class PreMembersController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		// ユーザー自身による登録を許可する
+		// 登録を許可する
 		$this->Auth->allow('index');
 	}
 }

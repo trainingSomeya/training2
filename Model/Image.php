@@ -48,4 +48,9 @@ class Image extends AppModel {
 			'order' => ''
 		)
 	);
+	//論理削除
+	public function beforeFind($queryData){
+		$queryData['conditions']['Image.delete_flag'] = 0;
+        return $queryData;
+    }
 }

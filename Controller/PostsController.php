@@ -175,13 +175,21 @@ class PostsController extends AppController {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		$this->request->allowMethod('post', 'delete');
-		if ($this->Post->delete()) {
-			$this->Flash->success(__('The post has been deleted.'));
-		} else {
-			$this->Flash->error(__('The post could not be deleted. Please, try again.'));
+
+		//論理削除
+		if($this->request->is('delete')||$this->request->is('post')){
+			$data = array('id' => $id,'delete_flag' => true);
+			$this->Post->save($data);
 		}
+		//物理削除
+		#		if ($this->Post->delete()) {
+		#			$this->Flash->success(__('The post has been deleted.'));
+		#		} else {
+		#			$this->Flash->error(__('The post could not be deleted. Please, try again.'));
+		#		}
 		return $this->redirect(array('action' => 'index'));
 	}
+
 	public function jqtest() {
 
 	}
@@ -190,20 +198,23 @@ class PostsController extends AppController {
 		parent::beforeFilter();
 		$this->Auth->allow('index', 'view','img_delete');
 	}	
-
+	//論理削除対応に変更
 	public function image($id = null, $num = 0) {
 		if (!$this->Post->exists($id)) {
 			throw new NotFoundException(__('Invalid post'));
 		}
 		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 
-		$post = $this->Post->find('first', $options);
+		//$post = $this->Post->find('first', $options);
+		$image = $this->Post->Image->find('all', array('conditions' => array('Image.post_id' => $this->Post->find('first', $options)['Post']['id'])));
 
 		$this->autoRender = false;
 
 		$mime_type = "image/png";
-		$file_path = "image/files/image/filename/".$post['Image'][$num]['id'].'/'.$post['Image'][$num]['filename'];
+		//$file_path = "image/files/image/filename/".$post['Image'][$num]['id'].'/'.$post['Image'][$num]['filename'];
+		$file_path = "image/files/image/filename/".$image[$num]['Image']['id'].'/'.$image[$num]['Image']['filename'];
 
+		echo $file_path;
 		$this->response->type($mime_type);
 		$this->response->file($file_path);
 		//		echo $this->response;
@@ -211,18 +222,25 @@ class PostsController extends AppController {
 
 	public function img_delete(){
 		$this->autoRender = false;
-        if($this->request->is('ajax')) {
+		if($this->request->is('ajax')) {
 			$num = $this->request->data('delete_img_num');
 			$post_id = $this->request->data('delete_post_id');
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $post_id));
 			$post = $this->Post->find('first', $options);
 			$img_options = array('conditions' => array($this->Post->primaryKey => $post['Image'][$num]['id']));
 			$result = $this->Post->Image->find('first',$options);
-			if($this->Post->Image->delete($post['Image'][$num]['id'])){
+
+			//論理削除
+			$data = array('id' => $post['Image'][$num]['id'],'delete_flag' => true);
+			if($this->Post->Image->save($data)){
 				return json_encode($post['Image'][$num]['filename']);
 			}
+			//物理削除
+			#	if($this->Post->Image->delete($post['Image'][$num]['id'])){
+			#		return json_encode($post['Image'][$num]['filename']);
+			#	}
 			return json_encode(null);
-        }
+		}
 	}
 }
 
