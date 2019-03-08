@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var size = $(".img").length;
+	const margin=300;    // 上下左右の最低マージン
 	/* 画像を押す */
 	$('.img').on('click',function()
 		{
@@ -11,7 +12,6 @@ $(document).ready(function(){
 			img_ratio = img_height/img_width;   // 画像の幅高比	
 			//ウィンドウサイズに合わせて表示
 			var w;  var h;      // 幅、高さ
-			const margin=200;    // 上下左右の最低マージン
 
 			if(img_ratio > 1){
 				h = $(window).height()-margin;
@@ -71,7 +71,6 @@ $(document).ready(function(){
 				img_ratio = img_height/img_width;   // 画像の幅高比	
 				//ウィンドウサイズに合わせて表示
 				var w;  var h;      // 幅、高さ
-				const margin=200;    // 上下左右の最低マージン
 
 				if(img_ratio > 1){
 					h = $(window).height()-margin;
@@ -152,7 +151,6 @@ $(document).ready(function(){
 		img_ratio = img_height/img_width;   // 画像の幅高比	
 		//ウィンドウサイズに合わせて表示
 		var w;  var h;      // 幅、高さ
-		const margin=200;    // 上下左右の最低マージン
 
 		if(img_ratio > 1){
 			h = $(window).height()-margin;
@@ -198,7 +196,6 @@ $(document).ready(function(){
 		img_ratio = img_height/img_width;   // 画像の幅高比	
 		//ウィンドウサイズに合わせて表示
 		var w;  var h;      // 幅、高さ
-		const margin=200;    // 上下左右の最低マージン
 
 		if(img_ratio > 1){
 			h = $(window).height()-margin;

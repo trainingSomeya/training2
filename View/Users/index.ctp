@@ -13,13 +13,13 @@
 		<table class="table s-tbl" cellpadding="0" cellspacing="0">
 			<thead>
 				<tr>
-					<th><?php echo $this->Paginator->sort('id'); ?></th>
-					<th><?php echo $this->Paginator->sort('username'); ?></th>
-					<th><?php echo $this->Paginator->sort('password'); ?></th>
-					<th><?php echo $this->Paginator->sort('group_id'); ?></th>
-					<th><?php echo $this->Paginator->sort('address'); ?></th>
-					<th><?php echo $this->Paginator->sort('created'); ?></th>
-					<th><?php echo $this->Paginator->sort('modified'); ?></th>
+					<th><?php echo __($this->Paginator->sort('id')); ?></th>
+					<th><?php echo __($this->Paginator->sort('username')); ?></th>
+					<th><?php echo __($this->Paginator->sort('password')); ?></th>
+					<th><?php echo __($this->Paginator->sort('group_id')); ?></th>
+					<th><?php echo __($this->Paginator->sort('address')); ?></th>
+					<th><?php echo __($this->Paginator->sort('created')); ?></th>
+					<th><?php echo __($this->Paginator->sort('modified')); ?></th>
 					<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
 			</thead>

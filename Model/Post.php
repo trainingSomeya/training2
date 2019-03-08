@@ -11,9 +11,10 @@ class Post extends AppModel {
 	public $filterArgs = array(
 		'title' => array('type' => 'like'),
 		'categoryname' => array('type' => 'like','field' => 'Category.categoryname'),
-		'tagname' => array('type' => 'subquery','method' => 'searchTag', 'field' => 'Post.id')
+		'tagname' => array('type' => 'query','method' => 'AndSearchTag', 'field' => 'Post.id')
+		//'tagname' => array('type' => 'subquery','method' => 'searchTag', 'field' => 'Post.id')
 	);
-
+	//or検索
 	function searchTag($data = array()) {
 		$this->PostsTag->Behaviors->attach('Containable', array('autoFields' => false));
 		$this->PostsTag->Behaviors->attach('Search.Searchable');
@@ -23,10 +24,33 @@ class Post extends AppModel {
 				'Tag.tagname' => $data['tagname']
 			),
 			'fields' => array('post_id'),
-			'contain' => array('Tag')
+			'contain' => array('Tag'),
 		));
-
 		return $query;
+	}
+	//and検索
+	function AndSearchTag($data = array()) {
+		//debug($data['tagname']);
+		$tag_num = count($data['tagname']);
+		$options = array(
+			'conditions'=> array('Tag.tagname' => $data['tagname']),
+			'fields'=> 'PostsTag.post_id',
+			//'fields'=>array('PostsTag.post_id','COUNT(Post.id)'),
+			'group' => array('Post.id'),
+			'having' => array('COUNT(Post.id) >=' => $tag_num) 
+		);
+		$posts_tags = $this->PostsTag->find('all',$options);
+		$test =$this->getDataSource()->getLog();
+		//debug($test);
+		$conditions = array('Post.id' => array());
+		foreach($posts_tags as $postid){
+			$condition = array('Post.id' => $postid['PostsTag']['post_id']);
+			array_push($conditions['Post.id'], $condition['Post.id']);
+		}
+		//debug($posts_tags);
+		//debug($conditions);
+		//exit;
+		return $conditions;
 	}
 	/**
 	 * Validation rules

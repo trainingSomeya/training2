@@ -31,8 +31,8 @@ class PreMembersController extends AppController {
 			}
 
 			$this->PreMember->begin();//トランザクション処理開始
-			$this->PreMember->create();
 			try{
+				$this->PreMember->create();
 				if( $this->PreMember->save( $this->request->data)){
 
 					$urltoken = $this->PreMember->get_token();//urlトークンの作成
