@@ -155,7 +155,8 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// ユーザー自身による登録とログアウトを許可する
-		$this->Auth->allow('add', 'logout','search');
+		// 郵便番号検索,dataaddを一時的に許可、後でaclの修正
+		$this->Auth->allow('add', 'logout','search','dataadd');
 	}
 
 	public function login() {
@@ -170,6 +171,56 @@ class UsersController extends AppController {
 	public function logout() {
 		$this->Session->setFlash('Good-Bye');
 		$this->redirect($this->Auth->logout());
+	}
+
+	public function dataadd() {
+		$db_user = "root";
+		$db_pass = "password";
+		$db_host = "localhost";
+		$db_name = "blogtest";
+		$db_type = "mysql";
+
+		if ($this->request->is(array('post', 'put'))) {
+			$table_name = $this->request->data['User']['table_name'];
+			$dsn = $this->User->create_dsn($db_type, $db_host, $db_name);
+
+			try{
+				$pdo = new PDO($dsn,$db_user,$db_pass);
+				$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+				$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
+				echo "接続しました。";
+			}catch(PDOException $Exception){
+				die('error:'.$Exception->getMessage());
+			}
+
+			try{
+				$pdo->beginTransaction();
+				$this->User->create_table($table_name);
+				$sql = "INSERT INTO {$table_name} (jiscode, zipcode, state, city, street, changed, cause) VALUES (:jiscode, :zipcode, :state, :city, :street, :changed, :cause)";
+				$stmh = $pdo->prepare($sql);
+
+				$row = 1;
+				if (($handle = fopen("../table/KEN_ALL-UTF-SI.CSV", "r")) !== FALSE) {
+					while (($data = fgetcsv($handle, 0, ",")) !== FALSE) {
+						$num = count($data);
+						if($num != 8){
+							break;	
+						}
+						$params = array(':jiscode' => $data[1], ':zipcode' => $data[2], ':state' => $data[3], ':city' => $data[4], ':street' => $data[5], ':changed' => $data[6], ':cause' => $data[7]);
+						// SQLを実行
+						$stmh->execute($params);
+						$row++;
+					}
+					fclose($handle);
+				}
+				$pdo->commit();
+				echo "合計".$row."件作成";
+			}catch(PDOException $Exception){
+				$pdo->rollBack();
+				echo "error";
+			}
+		}
+
 	}
 
 

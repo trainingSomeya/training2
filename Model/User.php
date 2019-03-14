@@ -112,6 +112,30 @@ class User extends AppModel {
         }
 	}
 
+	////////動的テーブルの作成テスト////////////
+	public function create_table($table_name){
+		$db = ConnectionManager::getDataSource($this->useDbConfig);
+		$q = "CREATE TABLE if not exists {$table_name}(
+			id int(11) unsigned not null auto_increment , 
+			jiscode varchar(6) collate utf8_bin not null default '', 
+			zipcode decimal(8,7) unsigned not null default 0, 
+			state varchar(100) collate utf8_bin not null default '', 
+			city varchar(100) collate utf8_bin not null default '', 
+			street varchar(100) collate utf8_bin not null default '', 
+			changed tinyint(3) unsigned not null default 0, 
+			cause tinyint(3) unsigned not null default 0, 
+			primary key (id), 
+			key zipcode (zipcode))engine=Innodb default character set utf8 collate utf8_bin comment '郵便番号'";
+		return $db->query($q);
+	}
+
+	public function create_dsn($db_type, $db_host, $db_name){
+		$dsn = "$db_type:host=$db_host;dbname=$db_name;charset=utf8";
+		return $dsn;
+	}
+
+	//////////////////////
+
 	public function bindNode($user) {
 		return array('model' => 'Group', 'foreign_key' => $user['User']['group_id']);
 	}
