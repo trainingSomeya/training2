@@ -35256,3 +35256,999 @@ Stack Trace:
 #4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #5 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2019-03-15 15:41:50 Error: [MissingControllerException] Controller class DataaddController could not be found.
+Exception Attributes: array (
+  'class' => 'DataaddController',
+  'plugin' => NULL,
+)
+Request URL: /dataadd
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 16:14:23 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 16:14:24 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 16:14:27 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 16:14:39 Error: [MissingControllerException] Controller class PoController could not be found.
+Exception Attributes: array (
+  'class' => 'PoController',
+  'plugin' => NULL,
+)
+Request URL: /po
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 16:18:54 Error: [MissingHelperException] Helper class BootstrapPaginatorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapPaginatorHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapPagina...')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapPagina...')
+#2 /var/www/blog/app/View/Changedatas/index.ctp(6): View->__get('BootstrapPagina...')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-15 16:19:53 Error: [MissingHelperException] Helper class BootstrapPaginatorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapPaginatorHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapPagina...')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapPagina...')
+#2 /var/www/blog/app/View/Changedatas/index.ctp(6): View->__get('BootstrapPagina...')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-15 16:20:26 Error: [MissingHelperException] Helper class BootstrapPaginatorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapPaginatorHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapPagina...')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapPagina...')
+#2 /var/www/blog/app/View/Changedatas/index.ctp(6): View->__get('BootstrapPagina...')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-15 16:20:34 Error: [MissingHelperException] Helper class BootstrapPaginatorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapPaginatorHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapPagina...')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapPagina...')
+#2 /var/www/blog/app/View/Changedatas/index.ctp(6): View->__get('BootstrapPagina...')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-15 16:21:17 Error: [MissingHelperException] Helper class BootstrapPaginatorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapPaginatorHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas/index
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapPagina...')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapPagina...')
+#2 /var/www/blog/app/View/Changedatas/index.ctp(6): View->__get('BootstrapPagina...')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-15 16:42:13 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/blog/app/Controller/ChangedatasController.php, line 11]
+2019-03-15 16:42:13 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /changedatas
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 11, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 11, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-03-15 16:59:25 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/blog/app/Controller/ChangedatasController.php, line 21]
+2019-03-15 16:59:25 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/blog/a...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/blog/a...', 21, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/blog/a...', 21, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-03-15 17:08:57 Error: [MissingControllerException] Controller class ImageController could not be found.
+Exception Attributes: array (
+  'class' => 'ImageController',
+  'plugin' => NULL,
+)
+Request URL: /image
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 17:29:32 Error: [MissingViewException] View file "Changedatas/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Changedatas/delete.ctp',
+)
+Request URL: /changedatas/delete/3
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-03-15 18:02:46 Error: [MissingPluginException] Plugin UploadPack could not be found.
+Exception Attributes: array (
+  'plugin' => 'UploadPack',
+)
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Core/App.php(227): CakePlugin::path('UploadPack')
+#1 /var/www/blog/lib/Cake/Core/App.php(549): App::path('View/Helper', 'UploadPack')
+#2 [internal function]: App::load('UploadHelper')
+#3 [internal function]: spl_autoload_call('UploadHelper')
+#4 /var/www/blog/lib/Cake/View/HelperCollection.php(130): class_exists('UploadHelper')
+#5 /var/www/blog/lib/Cake/View/View.php(907): HelperCollection->load('UploadPack.Uplo...', Array)
+#6 /var/www/blog/lib/Cake/View/View.php(354): View->loadHelpers()
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ChangedatasController))
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-03-15 18:09:16 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/blog/app/View/Changedatas/add.ctp, line 4]
+2019-03-15 18:09:16 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 4, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 4, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-03-15 18:26:51 Error: [MissingHelperException] Helper class UploadHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UploadHelper',
+  'plugin' => 'Upload',
+)
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(907): HelperCollection->load('Upload.Upload', Array)
+#1 /var/www/blog/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ChangedatasController))
+#3 /var/www/blog/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#6 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2019-03-15 18:27:35 Error: [MissingPluginException] Plugin UploadPack could not be found.
+Exception Attributes: array (
+  'plugin' => 'UploadPack',
+)
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Core/App.php(227): CakePlugin::path('UploadPack')
+#1 /var/www/blog/lib/Cake/Core/App.php(549): App::path('View/Helper', 'UploadPack')
+#2 [internal function]: App::load('UploadHelper')
+#3 [internal function]: spl_autoload_call('UploadHelper')
+#4 /var/www/blog/lib/Cake/View/HelperCollection.php(130): class_exists('UploadHelper')
+#5 /var/www/blog/lib/Cake/View/View.php(907): HelperCollection->load('UploadPack.Uplo...', Array)
+#6 /var/www/blog/lib/Cake/View/View.php(354): View->loadHelpers()
+#7 /var/www/blog/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ChangedatasController))
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-03-15 18:27:47 Error: [MissingHelperException] Helper class UploadHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UploadHelper',
+  'plugin' => 'Upload',
+)
+Request URL: /changedatas/add
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(907): HelperCollection->load('Upload.Upload', Array)
+#1 /var/www/blog/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/blog/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(ChangedatasController))
+#3 /var/www/blog/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#6 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2019-03-15 19:12:55 Error: [NotFoundException] Invalid data
+Request URL: /changedatas/delete/1
+Stack Trace:
+#0 [internal function]: ChangedatasController->delete('1')
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-03-15 20:00:20 Error: [MissingControllerException] Controller class ChangedatasaController could not be found.
+Exception Attributes: array (
+  'class' => 'ChangedatasaController',
+  'plugin' => NULL,
+)
+Request URL: /changedatasa/add
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-15 20:01:38 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/11/KEN_ALL-UTF-SI.CSV
+2019-03-15 20:01:38 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(22): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-15 20:04:26 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/12/KEN_ALL-UTF-SI.CSV
+2019-03-15 20:04:26 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(22): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-15 20:08:04 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/13/KEN_ALL-UTF-SI.CSV
+2019-03-15 20:08:04 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(22): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-15 20:14:00 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/16/KEN_ALL-UTF-SI.CSV
+2019-03-15 20:14:00 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 12:22:49 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:22:49 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:22:49 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:22:49 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:00 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:00 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:07 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:07 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:07 Error: [MissingControllerException] Controller class Apple-touch-icon-precomposed.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon-precomposed.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:07 Error: [MissingControllerException] Controller class Apple-touch-icon.pngController could not be found.
+Exception Attributes: array (
+  'class' => 'Apple-touch-icon.pngController',
+  'plugin' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:09 Error: [MissingControllerException] Controller class PoController could not be found.
+Exception Attributes: array (
+  'class' => 'PoController',
+  'plugin' => NULL,
+)
+Request URL: /po
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:23:10 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 12:25:28 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/16/KEN_ALL-UTF-SI.CSV
+2019-03-22 12:25:28 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:09:50 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/19/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:09:50 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:10:45 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/20/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:10:45 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:11:04 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 13:11:04 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 13:11:05 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 13:11:39 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/21/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:11:39 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:20:31 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 13:20:32 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 13:20:38 Error: [MissingActionException] Action UsersController::change() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'change',
+)
+Request URL: /users/change
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 13:21:12 Error: [MissingActionException] Action UsersController::change() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'change',
+)
+Request URL: /users/change
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 13:26:03 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 13:27:18 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 13:42:43 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/22/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:42:43 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:46:31 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/23/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:46:31 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:46:52 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/24/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:46:52 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:48:40 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/25/KEN_ALL-UTF-SI.CSV
+2019-03-22 13:48:40 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 13:49:42 Error: Model Changedata, Field filename: Unable to move the uploaded file to /var/www/blog/app/address_data/26/KEN_ALL-UTF-SI-TEST.txt
+2019-03-22 13:49:42 Error: [UploadException] Unable to upload file
+Request URL: /changedatas/add
+Stack Trace:
+#0 [internal function]: UploadBehavior->afterSave(Object(Changedata), true, Array)
+#1 /var/www/blog/lib/Cake/Utility/ObjectCollection.php(129): call_user_func_array(Array, Array)
+#2 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#3 /var/www/blog/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#4 /var/www/blog/lib/Cake/Model/Model.php(1970): CakeEventManager->dispatch(Object(CakeEvent))
+#5 /var/www/blog/lib/Cake/Model/Model.php(1754): Model->_doSave(Array, Array)
+#6 /var/www/blog/lib/Cake/Model/Model.php(2515): Model->save(Array, Array)
+#7 /var/www/blog/lib/Cake/Model/Model.php(2287): Model->saveAssociated(Array, Array)
+#8 /var/www/blog/app/Controller/ChangedatasController.php(25): Model->saveAll(Array)
+#9 [internal function]: ChangedatasController->add()
+#10 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#11 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#13 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-03-22 15:20:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Changedata.' in 'where clause'
+Request URL: /changedatas/edit/18
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(489): PDOStatement->execute(Array)
+#1 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(455): DboSource->_execute('SELECT `Changed...', Array)
+#2 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(702): DboSource->execute('SELECT `Changed...', Array, Array)
+#3 /var/www/blog/lib/Cake/Model/Datasource/DboSource.php(1213): DboSource->fetchAll('SELECT `Changed...', false)
+#4 /var/www/blog/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Changedata), Array)
+#5 /var/www/blog/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /var/www/blog/app/Controller/ChangedatasController.php(40): Model->find('first', Array)
+#7 [internal function]: ChangedatasController->edit('18')
+#8 /var/www/blog/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ChangedatasController), Array)
+#9 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#11 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-03-22 15:32:30 Error: [MissingControllerException] Controller class PoController could not be found.
+Exception Attributes: array (
+  'class' => 'PoController',
+  'plugin' => NULL,
+)
+Request URL: /po
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:31 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 15:32:33 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 15:32:34 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:35 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/index
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:38 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/index
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:41 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/dataadd
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:47 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/dataadd
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:32:49 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/adddata
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:33:26 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/adddata
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:33:29 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/dataadd
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:33:31 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/dataadd
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:34:44 Error: [MissingActionException] Action UsersController::initDB() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'initDB',
+)
+Request URL: /users/initDB
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 15:34:45 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 15:34:53 Error: [MissingHelperException] Helper class BootstrapFormHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapFormHelper',
+  'plugin' => false,
+)
+Request URL: /changedatas/edit/18
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('BootstrapForm')
+#1 /var/www/blog/lib/Cake/View/View.php(858): HelperCollection->__isset('BootstrapForm')
+#2 /var/www/blog/app/View/Changedatas/edit.ctp(3): View->__get('BootstrapForm')
+#3 /var/www/blog/lib/Cake/View/View.php(971): include('/var/www/blog/a...')
+#4 /var/www/blog/lib/Cake/View/View.php(933): View->_evaluate('/var/www/blog/a...', Array)
+#5 /var/www/blog/lib/Cake/View/View.php(473): View->_render('/var/www/blog/a...')
+#6 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#9 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-03-22 15:37:05 Error: [MissingViewException] View file "Changedatas/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Changedatas/edit.ctp',
+)
+Request URL: /changedatas/edit/18
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-03-22 15:37:10 Error: [MissingViewException] View file "Changedatas/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Changedatas/edit.ctp',
+)
+Request URL: /changedatas/edit/18
+Stack Trace:
+#0 /var/www/blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/blog/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ChangedatasController), Object(CakeRequest))
+#4 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-03-22 16:35:13 Error: [MissingControllerException] Controller class PreMemberController could not be found.
+Exception Attributes: array (
+  'class' => 'PreMemberController',
+  'plugin' => NULL,
+)
+Request URL: /pre_member
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 17:21:03 Error: [MissingActionException] Action UsersController::dataadd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dataadd',
+)
+Request URL: /users/dataadd
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 17:21:04 Error: [MissingActionException] Action UsersController::dataadd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dataadd',
+)
+Request URL: /users/dataadd
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 17:21:10 Error: [MissingActionException] Action UsersController::dataad() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dataad',
+)
+Request URL: /users/dataad
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-03-22 17:27:25 Error: [MissingControllerException] Controller class PoController could not be found.
+Exception Attributes: array (
+  'class' => 'PoController',
+  'plugin' => NULL,
+)
+Request URL: /po
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 17:27:28 Error: [MissingControllerException] Controller class CategoriesController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriesController',
+  'plugin' => NULL,
+)
+Request URL: /categories/view
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 17:46:58 Error: [MissingControllerException] Controller class ChangedataController could not be found.
+Exception Attributes: array (
+  'class' => 'ChangedataController',
+  'plugin' => NULL,
+)
+Request URL: /changedata
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 17:47:28 Error: [MissingControllerException] Controller class ChangedataController could not be found.
+Exception Attributes: array (
+  'class' => 'ChangedataController',
+  'plugin' => NULL,
+)
+Request URL: /changedata
+Stack Trace:
+#0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-03-22 18:03:36 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/blog/app/View/Layouts/default.ctp, line 182]
+2019-03-22 18:03:36 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /changedatas
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 182, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 182, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

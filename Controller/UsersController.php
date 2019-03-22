@@ -173,7 +173,7 @@ class UsersController extends AppController {
 		$this->redirect($this->Auth->logout());
 	}
 
-	public function dataadd() {
+	/*public function dataadd() {
 		$db_user = "root";
 		$db_pass = "password";
 		$db_host = "localhost";
@@ -200,7 +200,8 @@ class UsersController extends AppController {
 				$stmh = $pdo->prepare($sql);
 
 				$row = 1;
-				if (($handle = fopen("../table/KEN_ALL-UTF-SI.CSV", "r")) !== FALSE) {
+				//if (($handle = fopen("../table/KEN_ALL-UTF-SI.CSV", "r")) !== FALSE) {
+				if (($handle = fopen("../address_data/18/KEN_ALL-UTF-TEST.CSV", "r")) !== FALSE) {
 					while (($data = fgetcsv($handle, 0, ",")) !== FALSE) {
 						$num = count($data);
 						if($num != 8){
@@ -221,7 +222,7 @@ class UsersController extends AppController {
 			}
 		}
 
-	}
+		}*/
 
 
 /* public function initDB() {

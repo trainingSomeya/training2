@@ -182,47 +182,48 @@ legend {
 							  else{echo '未ログイン';}?>
 							  <div class="collapse navbar-collapse" id="navbarAction">
 								  <ul class="nav navbar-nav">
-									  <li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?></li>
+									  <li><?php if($auth){echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'));} ?></li>
 									  <li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></li>
 									  <li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?></li>
-									  <li><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts','action' => 'add')); ?></li>
-									  <li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?></li>
-									  <li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?></li>
-									  <li><?php echo $this->Html->link(__('JQ Test'), array('controller' => 'posts', 'action' => 'jqtest')); ?></li>
-									  <li><?php echo $this->Html->link(__('logout'), array('controller' => 'users', 'action' => 'logout')); ?></li>
-									  <li><?php echo $this->Html->link(__('register'), array('controller' => 'pre_members', 'action' => 'index')); ?></li>
+									  <li><?php if($auth){echo $this->Html->link(__('New Post'), array('controller' => 'posts','action' => 'add'));} ?></li>
+									  <li><?php if($auth){echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index'));} ?></li>
+									  <li><?php if($auth){echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add'));} ?></li>
+									  <!-- <li><?php if($auth){echo $this->Html->link(__('JQ Test'), array('controller' => 'posts', 'action' => 'jqtest'));} ?></li> -->
+									  <li><?php if($auth){echo $this->Html->link(__('logout'), array('controller' => 'users', 'action' => 'logout'));}
+										  else{echo $this->Html->link(__('login'), array('controller' => 'users', 'action' => 'login'));} ?></li>
+									  <li><?php if($auth){echo $this->Html->link(__('Change Address Database'), array('controller' => 'changedatas', 'action' => 'index'));} ?></li>
 								  </ul>
 								  <button type="button" class="btn btn-default navbar-btn navbar-right" id="search">Search</button>
 							  </div>
 							  <!-- 検索フォームを作成 -->
-								  <div class="search">
-									  <div class="form-inline">
-										  <?php echo $this->Form->create('Post', array(
-										  'url' =>  array_merge(array('action' => 'index'),
-										  $this->params['pass']),'inputDefaults'=>array('class'=>'form-control'),
-										  'novalidate' => true
-										  )); ?>
-										  <div class="form-group">
-											  <?php echo $this->Form->label('title'); ?>
-											  <?php echo $this->Form->text('title',array("placeholder"=>"Search")); ?>
-										  </div>
-										  <div class="form-group">
-											  <?php echo $this->Form->input('categoryname',array('type'=>'select','options'=>$list,'label'=>'Category','empty'=>'','selected'=>'')); ?>
-											  <!--    <?php print var_export($list,true); ?>
-				 <?php echo $this->Form->label('Category'); ?>
-				 <?php echo $this->Form->text('categoryname'); ?> -->
-										  </div>
-										  <div class="form-group">
-											  <?php echo $this->Form->input('tagname',array('type'=>'select','multiple' => true,'options'=>$tags,'label'=>'Tag','empty'=>'','selected'=>'')); ?>
-											  <!--        <?php echo $this->Form->label('tag'); ?>
-				 <?php echo $this->Form->text('tagname'); ?> -->
-										  </div>
-										  <div class="form-group">
-											  <?php echo $this->Form->submit(__('Search', true), array('div' => false)); ?>
-										  </div>
-										  <?php echo $this->Form->end();?>
+							  <div class="search">
+								  <div class="form-inline">
+									  <?php echo $this->Form->create('Post', array(
+									  'url' =>  array_merge(array('action' => 'index'),
+									  $this->params['pass']),'inputDefaults'=>array('class'=>'form-control'),
+									  'novalidate' => true
+									  )); ?>
+									  <div class="form-group">
+										  <?php echo $this->Form->label('title'); ?>
+										  <?php echo $this->Form->text('title',array("placeholder"=>"Search")); ?>
 									  </div>
+									  <div class="form-group">
+										  <?php echo $this->Form->input('categoryname',array('type'=>'select','options'=>$list,'label'=>'Category','empty'=>'','selected'=>'')); ?>
+										  <!--    <?php print var_export($list,true); ?>
+				<?php echo $this->Form->label('Category'); ?>
+				<?php echo $this->Form->text('categoryname'); ?> -->
+									  </div>
+									  <div class="form-group">
+										  <?php echo $this->Form->input('tagname',array('type'=>'select','multiple' => true,'options'=>$tags,'label'=>'Tag','empty'=>'','selected'=>'')); ?>
+										  <!--        <?php echo $this->Form->label('tag'); ?>
+				<?php echo $this->Form->text('tagname'); ?> -->
+									  </div>
+									  <div class="form-group">
+										  <?php echo $this->Form->submit(__('Search', true), array('div' => false)); ?>
+									  </div>
+									  <?php echo $this->Form->end();?>
 								  </div>
+							  </div>
 
 			</div>
 		</nav>

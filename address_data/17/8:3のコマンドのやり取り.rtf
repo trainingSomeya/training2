@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg932\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset128 HiraginoSans-W3;
+}
+{\colortbl;\red255\green255\blue255;\red60\green95\blue255;\red41\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0  
+\f1\fs22 \CocoaLigature0 [vagrant@blog ~]$ httpd -v\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 Server version: Apache/2.4.6 (CentOS)\
+Server built:   Nov 19 2015 21:43:13\
+[vagrant@blog ~]$ mysql -v\
+ERROR 1045 (28000): Access denied for user 'vagrant'@'localhost' (using password: NO)\
+[vagrant@blog ~]$ ping http://blog.dv\
+ping: unknown host http://blog.dv\
+[vagrant@blog ~]$ which httpd\
+/usr/sbin/httpd\
+[vagrant@blog ~]$ cd /etc/httpd\
+[vagrant@blog httpd]$ ls\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 conf\cf0   \cf2 conf.d\cf0   \cf2 conf.modules.d\cf0   \cf2 conf.v\cf0   \cf3 logs\cf0   \cf3 modules\cf0   \cf3 run\cf0 \
+[vagrant@blog httpd]$ cd conf\
+[vagrant@blog conf]$ ls\
+httpd.conf  magic\
+[vagrant@blog conf]$ v\
+-bash: v: 
+\f2 \'83\'52\'83\'7d\'83\'93\'83\'68\'82\'aa\'8c\'a9\'82\'c2\'82\'a9\'82\'e8\'82\'dc\'82\'b9\'82\'f1
+\f1 \
+[vagrant@blog conf]$ ls\
+httpd.conf  magic\
+[vagrant@blog conf]$ less httpd.conf\
+[vagrant@blog conf]$ cd ..\
+[vagrant@blog httpd]$ ls\
+\cf2 conf\cf0   \cf2 conf.d\cf0   \cf2 conf.modules.d\cf0   \cf2 conf.v\cf0   \cf3 logs\cf0   \cf3 modules\cf0   \cf3 run\cf0 \
+[vagrant@blog httpd]$ cd conf.v\
+[vagrant@blog conf.v]$ ls\
+blog.dev.conf\
+[vagrant@blog conf.v]$ less blog.dev.conf \
+[vagrant@blog conf.v]$ vi blog.dev.conf \
+[vagrant@blog conf.v]$ sudo vi blog.dev.conf\
+[vagrant@blog conf.v]$ less blog.dev.conf \
+[vagrant@blog conf.v]$ cd /var/www/blog\
+[vagrant@blog blog]$ ls\
+index.html\
+[vagrant@blog blog]$ less index.html }
