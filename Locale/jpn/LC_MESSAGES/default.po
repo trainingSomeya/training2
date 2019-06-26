@@ -417,7 +417,7 @@ msgstr ""
 #: View/Users/index.ctp:52
 #: View/Scaffolds/index.ctp:63
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
-msgstr "{:pages}ページ中{:page}ページ目、{:count}個の記事中、{:current}個の記事を表示しています。表示中の記事は{:start}番目から, {:end}番目です。"
+msgstr "{:pages}ページ中{:page}ページ目、{:count}個中、{:current}個を表示しています。{:start}番目から, {:end}番目を表示中です。"
 
 #: View/Groups/index.ctp:49
 #: View/Images/index.ctp:39
@@ -427,7 +427,7 @@ msgstr "{:pages}ページ中{:page}ページ目、{:count}個の記事中、{:cu
 #: View/Users/index.ctp:57
 #: View/Scaffolds/index.ctp:68
 msgid "previous"
-msgstr "前の記事"
+msgstr "前のページ"
 
 #: View/Groups/index.ctp:50
 #: View/Images/index.ctp:41
@@ -437,7 +437,7 @@ msgstr "前の記事"
 #: View/Users/index.ctp:58
 #: View/Scaffolds/index.ctp:70
 msgid "next"
-msgstr "次の記事"
+msgstr "次のページ"
 
 #: View/Groups/view.ctp:6
 #: View/Users/view.ctp:28

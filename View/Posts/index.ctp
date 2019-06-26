@@ -21,7 +21,7 @@
 				<!-- タイトル部分 -->
 				<h2><?php echo h($post['Post']['title']); ?>&nbsp;<br>
 					<small style="font-size: medium;"><?php echo h("Category: ".$post['Category']['categoryname']); ?>&nbsp;
-						<?php echo $this->Html->link("UserID: ".$post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?><br>
+						<?php echo $this->Html->link("UserName: ".$post['User']['username'], array('controller' => 'users', 'action' => 'view', $post['User']['id'])); ?><br>
 						<?php echo h("Created: ".$post['Post']['created']); ?>&nbsp;
 						<?php echo h("Modified: ".$post['Post']['modified']); ?>&nbsp;</small></h2>
 				<!-- 本文とタグとアクション --> 

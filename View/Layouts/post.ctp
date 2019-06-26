@@ -214,9 +214,7 @@ legend {
 				<?php echo $this->Form->text('categoryname'); ?> -->
 									  </div>
 									  <div class="form-group">
-										  <?php echo $this->Form->input('tagname',array('type'=>'select','multiple' => true,'options'=>$tags,'label'=>'Tag','empty'=>'','selected'=>'')); ?>
-										  <!--        <?php echo $this->Form->label('tag'); ?>
-				<?php echo $this->Form->text('tagname'); ?> -->
+										  <?php echo $this->Form->input('tagname',array('type'=>'select','multiple' => 'checkbox','options'=>$tags,'label'=>'Tag','empty'=>'','selected'=>'')); ?>
 									  </div>
 									  <div class="form-group">
 										  <?php echo $this->Form->submit(__('Search', true), array('div' => false)); ?>

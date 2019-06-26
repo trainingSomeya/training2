@@ -18,11 +18,10 @@ class UsersController extends AppController {
 		'authenticate' => array(
 			'Form' => array( 
 				// 認証されるには、Userのdelete_flagが0
-				'scope' => array( 'User.delete_flag' => 0)
+				'scope' => array( 'User.delete_flag' => 0),
+                )
 			)
-		)
-	),);
-
+		),);
 	/**
 	 * index method
 	 *

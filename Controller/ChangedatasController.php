@@ -5,30 +5,30 @@ App::uses('AppController', 'Controller');
  *
  */
 class ChangedatasController extends AppController {
-/**
- * Components
- *
- * @var array
- */
+	/**
+	 * Components
+	 *
+	 * @var array
+	 */
 	public $components = array('Paginator');	
-	
+
 	public function index(){
 		$this->Changedata->recursive = 0;
-        $this->set('datas', $this->Paginator->paginate());
+		$this->set('datas', $this->Paginator->paginate());
 	}
 	public function add(){
 		if ($this->request->is('post')) {
 			$this->Changedata->create();
-//debug($this->request->data);
+			//debug($this->request->data);
 			//exit;
 
-            if ($this->Changedata->saveall($this->request->data)) {
-                $this->Flash->success(__('The post has been saved.'));
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Flash->error(__('The post could not be saved. Please, try again.'));
-            }
-        }
+			if ($this->Changedata->saveall($this->request->data)) {
+				$this->Flash->success(__('The post has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Flash->error(__('The post could not be saved. Please, try again.'));
+			}
+		}
 	}
 	public function edit($id = null){
 		$db_user = "root";
@@ -55,10 +55,10 @@ class ChangedatasController extends AppController {
 
 			try{
 				$pdo->beginTransaction();
-        $sql = " DELETE FROM {$table_name};";
+				$sql = " DELETE FROM {$table_name};";
 				$stmh = $pdo->prepare($sql);
-						$stmh->execute();
-				
+				$stmh->execute();
+
 				$sql = "INSERT INTO {$table_name} (jiscode, zipcode, state, city, street, changed, cause) VALUES (:jiscode, :zipcode, :state, :city, :street, :changed, :cause)";
 				$stmh = $pdo->prepare($sql);
 
@@ -90,17 +90,17 @@ class ChangedatasController extends AppController {
 	public function view(){
 	}
 	public function delete($id = null){
-		 $this->Changedata->id = $id;
-        if (!$this->Changedata->exists()) {
-            throw new NotFoundException(__('Invalid data'));
-        }
-        $this->request->allowMethod('post', 'delete');
-        if ($this->Changedata->delete()) {
-            $this->Flash->success(__('The group has been deleted.'));
-        } else {
-            $this->Flash->error(__('The group could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(array('action' => 'index'));
+		$this->Changedata->id = $id;
+		if (!$this->Changedata->exists()) {
+			throw new NotFoundException(__('Invalid data'));
+		}
+		$this->request->allowMethod('post', 'delete');
+		if ($this->Changedata->delete()) {
+			$this->Flash->success(__('The group has been deleted.'));
+		} else {
+			$this->Flash->error(__('The group could not be deleted. Please, try again.'));
+		}
+		return $this->redirect(array('action' => 'index'));
 
 	}		
 

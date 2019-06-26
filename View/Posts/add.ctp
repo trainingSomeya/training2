@@ -10,10 +10,10 @@
 				<?php echo $this->Form->input('body');?>
 				<ul id="add_img_list"> 
 					<input type="button" class="add_btn" value="Image Add">
-					<!-- <li class="select_img">				
+					<li class="select_img">				
 						<?php echo $this->Form->input('Image..filename', array('type' => 'file', 'accept'=>'image/*'));?> 
 						<input type="button" class="cancel_btn" value="cancel">
-					</li>-->
+					</li>
 				</ul>
 				<?php echo $this->Form->input('Tag',array('type'=>'select','options'=>$tags,'multiple' => 'checkbox','size' => 5,'class'=>'checkbox')); ?>
 				<div class="form-group">

@@ -196,8 +196,13 @@ class PostsController extends AppController {
 
 	public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view','img_delete');
-	}	
+		$this->Auth->allow('index', 'view','img_delete','reacttest');
+	}
+
+	public function reacttest(){
+
+	}
+
 	//論理削除対応に変更
 	public function image($id = null, $num = 0) {
 		if (!$this->Post->exists($id)) {
