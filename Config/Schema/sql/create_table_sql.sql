@@ -153,3 +153,4 @@ CREATE TABLE `tested` (
   KEY `zipcode` (`zipcode`)
 ) ENGINE=InnoDB AUTO_INCREMENT=124237 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='郵便番号';
 
+

@@ -18,6 +18,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 ?>
 <!DOCTYPE html>
 <html>
+<style>
+<!--
+#flashMessage{
+    font-size:16px;
+    background: #000;
+    text-align:center;
+}
+-->
+</style>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>

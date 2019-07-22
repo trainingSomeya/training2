@@ -170,17 +170,31 @@ class PostsController extends AppController {
 	 * @return void
 	 */
 	public function delete($id = null) {
-		$this->Post->id = $id;
-		if (!$this->Post->exists()) {
-			throw new NotFoundException(__('Invalid post'));
-		}
-		$this->request->allowMethod('post', 'delete');
+		// ログインユーザーの情報を取得
+		$user = $this->Auth->user();
+		$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+		$post_user = $this->Post->find('first', $options);
+		if($user['id'] === $post_user['User']['id']){
+			$this->Post->id = $id;
+			if (!$this->Post->exists()) {
+				throw new NotFoundException(__('Invalid post'));
+			}
+			$this->request->allowMethod('post', 'delete');
 
-		//論理削除
-		if($this->request->is('delete')||$this->request->is('post')){
-			$data = array('id' => $id,'delete_flag' => true);
-			$this->Post->save($data);
+			//論理削除
+			if($this->request->is('delete')||$this->request->is('post')){
+				$data = array('id' => $id,'delete_flag' => true);
+				if($this->Post->save($data)){
+					$this->Flash->success(__('The post has been deleted.'));
+				}else{
+					$this->Flash->error(__('The post could not be deleted. Please, try again.'));
+				}
+
+			}
+		}else{
+			$this->Flash->error(__('Only the person who created it can be deleted.'));
 		}
+
 		//物理削除
 		#		if ($this->Post->delete()) {
 		#			$this->Flash->success(__('The post has been deleted.'));

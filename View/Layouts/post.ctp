@@ -53,9 +53,19 @@ legend {
 	font-size:64px;
 }
 #flashMessage{
-	font-size:16px;
+	font-size:24px;
 	background: #8cc;
 	text-align:center;
+}
+#flashMessage.error{
+	font-size:24px;
+	background: #f00;
+	text-align:center;
+}
+#flashMessage.success{
+    font-size:24px;
+    background: #8cc;
+    text-align:center;
 }
 .form-group{
 	font-size: 18px
