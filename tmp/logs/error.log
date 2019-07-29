@@ -36550,3 +36550,13 @@ Request URL: /apple-touch-icon.png
 Stack Trace:
 #0 /var/www/blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2019-07-29 18:41:34 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/blog/app/View/Posts/view.ctp, line 54]
+2019-07-29 18:41:34 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /posts/view/132
+Stack Trace:
+#0 /var/www/blog/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/blog/a...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/blog/a...', 54, Array)
+#2 /var/www/blog/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/blog/a...', 54, Array)
+#3 /var/www/blog/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

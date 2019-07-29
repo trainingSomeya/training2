@@ -11,7 +11,11 @@ class Image extends AppModel {
 			//画像保存用のフィールド名
 			'filename' => array(
 				'path' => '{ROOT}image/files/{model}/{field}/'
-			)
+			),
+			'styles'=>array(
+				'thumb'=>'80x80',
+			),
+			'maxsize'=>209715200,
 		)
 	);
 /**

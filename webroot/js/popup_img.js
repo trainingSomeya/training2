@@ -13,7 +13,7 @@ $(document).ready(function(){
 			//ウィンドウサイズに合わせて表示
 			var w;  var h;      // 幅、高さ
 
-			if(img_ratio > 1){
+			if($(window).height() < $(window).width()){
 				h = $(window).height()-margin;
 				w = h/img_ratio;
 			}else{
@@ -72,7 +72,7 @@ $(document).ready(function(){
 				//ウィンドウサイズに合わせて表示
 				var w;  var h;      // 幅、高さ
 
-				if(img_ratio > 1){
+				if($(window).height() < $(window).width()){
 					h = $(window).height()-margin;
 					w = h/img_ratio;
 				}else{
@@ -110,9 +110,8 @@ $(document).ready(function(){
 				img_ratio = img_height/img_width;   // 画像の幅高比	
 				//ウィンドウサイズに合わせて表示
 				var w;  var h;      // 幅、高さ
-				const margin=200;    // 上下左右の最低マージン
 
-				if(img_ratio > 1){
+				if($(window).height() < $(window).width()){
 					h = $(window).height()-margin;
 					w = h/img_ratio;
 				}else{
@@ -152,7 +151,7 @@ $(document).ready(function(){
 		//ウィンドウサイズに合わせて表示
 		var w;  var h;      // 幅、高さ
 
-		if(img_ratio > 1){
+		if($(window).height() < $(window).width()){
 			h = $(window).height()-margin;
 			w = h/img_ratio;
 		}else{
@@ -197,7 +196,7 @@ $(document).ready(function(){
 		//ウィンドウサイズに合わせて表示
 		var w;  var h;      // 幅、高さ
 
-		if(img_ratio > 1){
+		if($(window).height() < $(window).width()){
 			h = $(window).height()-margin;
 			w = h/img_ratio;
 		}else{
