@@ -163,6 +163,11 @@ font-size: 18px
 .navbar-custom .icon-bar {
 	background-color:#000000;
 }
+
+#button_search_btn{
+	display:none;
+}
+
 -->
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -191,7 +196,7 @@ font-size: 18px
 			<div class="collapse navbar-collapse" id="navbarAction">
 				<ul class="nav navbar-nav">
 					<li><?php if($auth){echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index'));} ?></li>
-					<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></li>
+					<li><?php echo $this->Html->link(__('New User'), array('controller' => 'pre_members', 'action' => 'index')); ?></li>
 					<li><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?></li>
 					<li><?php if($auth){echo $this->Html->link(__('New Post'), array('controller' => 'posts','action' => 'add'));} ?></li>
 					<li><?php if($auth){echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index'));} ?></li>

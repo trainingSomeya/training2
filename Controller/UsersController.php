@@ -154,12 +154,77 @@ class UsersController extends AppController {
 			return json_encode(null);
 		}
 	}
+	
+	public function region_search(){
+		$this->autoRender = false;
+		if($this->request->is('ajax')) {
+			if($this->request->data('region')){
+				$region = $this->request->data('region');
+				switch($region){
+				case "hokkaidou":
+					$regiondata = "^01[0-9]*";
+					break;
+				case "touhoku":
+					$regiondata = "^0[2-7][0-9]*";
+					break;
+				case "kanntou":
+					$regiondata = "^(0[8-9]|1[0-4])[0-9]*";
+					break;
+				case "tyuubu":
+					$regiondata = "^(1[5-9]|2[0-3])[0-9]*";
+					break;
+				case "kinki":
+					$regiondata = "^(2[4-9]|30)[0-9]*";
+					break;
+				case "tyuugoku":
+					$regiondata = "^3[1-5][0-9]*";
+					break;
+				case "sikoku":
+					$regiondata = "^3[6-9][0-9]*";
+					break;
+				case "kyuusyuu":
+					$regiondata = "^4[0-7][0-9]*";
+					break;
+				}
+				$options = array(
+					'conditions'=> array('PostalCode.jiscode REGEXP' => $regiondata),
+					'fields'=> 'PostalCode.state',
+					'group' => array('PostalCode.state'),
+				);
+				if($result = $this->User->PostalCode->find('all',$options)){
+					return json_encode($result);
+				}
+				return json_encode(null);
 
+			}elseif($this->request->data('prefecture')){
+				$prefecture = $this->request->data('prefecture');
+				$options = array('conditions'=>array('state'=>$prefecture),
+					'fields'=> 'PostalCode.city',
+					'group' => array('PostalCode.city'),
+				);
+				if($result = $this->User->PostalCode->find('all',$options)){
+					return json_encode($result);
+				}
+				return json_encode(null);
+			}elseif($this->request->data('city')){
+				$city = $this->request->data('city');
+				$options = array('conditions'=>array('city'=>$city),
+					'fields'=> 'PostalCode.street',
+				);
+				if($result = $this->User->PostalCode->find('all',$options)){
+					return json_encode($result);
+				}
+				return json_encode(null);
+			}
+
+
+		}
+	}
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// ユーザー自身による登録とログアウトを許可する
 		// 郵便番号検索,dataaddを一時的に許可、後でaclの修正
-		$this->Auth->allow('add', 'logout','search','dataadd');
+		$this->Auth->allow('add', 'logout','search','region_search','dataadd');
 	}
 
 	public function login() {

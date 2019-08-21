@@ -20,6 +20,25 @@
 				<div class="form-group">
 					<!-- 郵便番号入力のテキストボックス -->
 					<div class="well">
+						<p>ボタンで検索
+						地方：<select id="region">
+							<option disabled selected value></option>
+							<option value="hokkaidou">北海道地方</option>
+							<option value="touhoku">東北地方</option>
+							<option value="kanntou">関東地方</option>
+							<option value="tyuubu">中部地方</option>
+							<option value="kinki">近畿地方</option>
+							<option value="tyuugoku">中国地方</option>
+							<option value="sikoku">四国地方</option>
+							<option value="kyuusyuu">九州・沖縄地方</option>
+						</select>
+						県：<select id="prefecture">
+						</select>
+						市：<select id="city">
+						</select>
+						町：<select id="street">
+						</select>
+						<input type="button" id="button_search_btn" value="入力">
 						<p>郵便番号検索<input type="text" id="zipcode" value="" maxlength="7" title="郵便番号検索">
 						<input type="button" id="search_btn" value="検索">
 						※7桁の半角数字で入力</p>
